@@ -1,13 +1,20 @@
 ---
+title: Tim Gale
 layout: default
-title: Tim Gale - Designer
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+	<!-- posts -->
+		<div class="box--alpha six-tenths">
+			{% for post in site.posts %}
+			<div class="post">
+				<a href="{{ post.url }}">
+					<h1 class="heading--alpha spacing--bravo">{{ post.title }}</h1>
+				</a>
+					<div class="post__meta">
+						<span class="post__meta__item">
+							<i class="icon--left icon-clock"></i>{{ post.date | date_to_long_string }}</span>
+					</div>
+			</div>
+			{% endfor %}
+		</div>
+	<!-- /posts -->
