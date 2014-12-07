@@ -1,0 +1,20 @@
+/*----------------------------------------*\
+  List
+\*----------------------------------------*/
+
+.list--nav {}
+
+  .list--nav__item {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+    .list--nav__item.active {
+      text-decoration: underline;
+    }
+
+.list--posts {}
+
+  .list--posts__item {
+    list-style-type: none;
+  }
