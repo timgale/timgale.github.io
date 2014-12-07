@@ -35,22 +35,26 @@
 </div>
 
   
-<div class="bb">
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
-	<div class="container--alpha">
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
 
-			<div class="pb--double">
-
-				<p>Tim designs digital products. He holds a Bachelor or Arts in Web &amp; Multimedia Design and works at <a href="http://clicksco.com">Clicksco</a>.</p>
-				<p>You can find Tim online in numerous places. View his latest work on <a href="http://dribbble.com/timgale/">Dribbble</a>, follow him on  <a href="http://twitter.com/timgale/">Twitter</a>, connect with him on <a href="http://uk.linkedin.com/pub/tim-gale/13/258/58a/">LinkedIn</a> or see what's he's listening to on <a href="http://last.fm/user/timgale/">Last.fm</a>.</p>
-				<p>Offline, Tim spends his time in the gym.</p>
-				<p class="mb--double">For more information, drop him an <a href="mailto:tim@timothygale.co.uk">email</a>.</p>
-
-			</div>
-
-	</div>
-
-</div>
+<p>
+	Sorry the page <b id="url"></b> could not be found on this server.
+</p>
 
 
 </body>
