@@ -1,0 +1,9 @@
+{
+  "name": "sportmate-ios-quickview",
+  "description": "sportmate ios quickview",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.3.0"
+  }
+}
