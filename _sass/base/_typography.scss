@@ -1,0 +1,67 @@
+/*----------------------------------------*\
+  Typography
+\*----------------------------------------*/
+
+// Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin: 0; }
+
+.heading {
+  font-family: $font-family-alpha;
+  padding: 0;
+}
+
+  .heading--alpha {
+    @extend .heading;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #444444;    
+  }
+
+  .heading--bravo {
+    @extend .heading;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #444444;
+  }
+
+  .heading--charlie {
+    @extend .heading;
+    font-size: 1.3rem;
+    color: #444444;
+  }
+
+h2 {
+  @extend .mb;
+  @extend .heading--bravo;
+}
+
+
+// Paragraphs
+
+p {
+  font-family: $font-family-alpha;
+  @extend .mb;
+  font-size: 1.15rem;
+  line-height: 1.65em;
+}
+
+a {
+  color: rgb(6,69,173);
+  text-decoration: none;
+
+  &:hover {
+    color: darken(rgb(6,69,173), 10%);
+  }
+
+}
+
+.sub-text {
+  font-size: 0.9rem;
+  color: #777777;
+}

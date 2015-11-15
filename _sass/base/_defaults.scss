@@ -1,0 +1,19 @@
+/*----------------------------------------*\
+  Defaults
+\*----------------------------------------*/
+
+// Typography
+$font-family-alpha: "Lato", "Helvetica Nueue", Helvetica, sans-serif;
+$font-size-base:   17px;
+$line-height-base: 32px;
+
+// Spacing
+$spacing-base: $line-height-base;
+
+// Body
+body {
+  padding: ($spacing-base * 2) 0;
+  margin: 0;
+  font-family: $font-family-alpha;
+  color: #444444;
+}

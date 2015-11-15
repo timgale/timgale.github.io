@@ -1,0 +1,49 @@
+/*----------------------------------------*\
+  Utilities
+\*----------------------------------------*/
+
+// Typography
+.text-center { text-align: center; }
+
+// borders
+.bb {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+// rules
+hr {
+  border: 0;
+  height: 1px;
+  background: #E5E5E5;
+  margin: ($spacing-base * 2) 0;
+}
+
+// floats
+.fl { float: left; }
+.fr { float: right; }
+
+// spacing
+.mb          { margin-bottom: $spacing-base; }
+.mb--half    { margin-bottom: ($spacing-base / 2); }
+.mb--quarter { margin-bottom: ($spacing-base / 4); }
+.mb--double  { margin-bottom: ($spacing-base * 2); }
+.mb--4x      { margin-bottom: ($spacing-base * 4); }
+
+.mr          { margin-right: $spacing-base; }
+.mr--half    { margin-right: ($spacing-base / 2); }
+.mr--double  { margin-right: ($spacing-base * 2); }
+
+.pb          { padding-bottom: $spacing-base; }
+.pb--half    { padding-bottom: ($spacing-base / 2); }
+.pb--double  { padding-bottom: ($spacing-base * 2); }
+
+.pr          { padding-right: $spacing-base; }
+.pr--half    { padding-right: ($spacing-base / 2); }
+.pr--double  { padding-right: ($spacing-base * 2); }
+
+// clearfix
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}

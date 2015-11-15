@@ -1,0 +1,21 @@
+/*----------------------------------------*\
+  Showcase
+\*----------------------------------------*/
+
+// project
+.project {
+	position: relative;
+
+	&__info {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__heading {
+		display: inline-block;
+	}
+
+}

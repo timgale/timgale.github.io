@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  List
+\*----------------------------------------*/
+
+.list {
+  padding: 0;
+}
+
+.list--nav {
+  @extend .list;
+}
+
+  .list--nav__item {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+    .list--nav__item.active {
+      text-decoration: underline;
+    }
+
+.list--posts {
+  @extend .list;
+}
+
+  .list--posts__item {
+    list-style-type: none;
+  }

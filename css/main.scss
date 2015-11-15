@@ -1,0 +1,25 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+/*----------------------------------------*\
+  Main
+\*----------------------------------------*/
+
+// Base
+@import 'base/defaults';
+@import 'base/grid';
+
+// Theme
+// @import 'theme/alpha';
+
+@import 'base/typography';
+
+// Utilities
+@import 'base/utilities';
+
+// Components
+@import 'components/container';
+@import 'components/list';
+@import 'components/showcase';
