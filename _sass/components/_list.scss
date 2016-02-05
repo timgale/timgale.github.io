@@ -25,4 +25,10 @@
 
   .list--posts__item {
     list-style-type: none;
+    @extend .mb;
+
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+
   }
