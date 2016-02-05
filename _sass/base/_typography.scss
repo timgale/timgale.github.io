@@ -20,19 +20,20 @@ h6 { margin: 0; }
     @extend .heading;
     font-weight: 400;
     letter-spacing: 0;
-    color: #444444;    
+    color: #444444;
   }
 
   .heading--bravo {
     @extend .heading;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #444444;
   }
 
   .heading--charlie {
     @extend .heading;
     font-size: 1.3rem;
+    font-weight: 400;
     color: #444444;
   }
 
@@ -48,7 +49,7 @@ p {
   font-family: $font-family-alpha;
   @extend .mb;
   font-size: 1.15rem;
-  line-height: 1.65em;
+  line-height: 1.7em;
 }
 
 a {
