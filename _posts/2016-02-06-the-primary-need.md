@@ -4,7 +4,7 @@ title: The Primary Need
 date: 2016-02-05
 ---
 
-One of the first things to ask when approaching a problem is, _what is the user trying to achieve here?_ Closely followed by _how do they currently do this_ and _should they even need to do this?_
+One of the first things to ask when approaching a problem is, “what is the user trying to achieve here?”. Closely followed by “how do they currently do this?” and “should they even need to do this?”.
 
 The last question is particularly crucial when delivering functional online service. Putting the user in control doesn’t have to mean endless steps and decisions. More often than not, the less decisions the user needs to make, the better their experience. The theory here is that by reducing the number of potential interactions, there is less pressure on the user when making a selection. Asking the right questions only when absolutely necessary has the potential for users to feel increased confidence in the services you provide.
 
