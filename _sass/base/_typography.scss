@@ -32,6 +32,7 @@ h6 { margin: 0; }
 
   .heading--charlie {
     @extend .heading;
+    margin-top: 0;
     font-size: 1.3rem;
     font-weight: 400;
     color: #444444;
@@ -42,12 +43,20 @@ h2 {
   @extend .heading--bravo;
 }
 
+h3 {
+  @extend .heading;
+  @extend .mb;
+  margin-top: ($spacing-base * 1.6);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 
 // Paragraphs
 
 p {
   font-family: $font-family-alpha;
-  @extend .mb;
+  @extend .mb--half;
   font-size: 1.15rem;
   line-height: 1.8em;
 }
