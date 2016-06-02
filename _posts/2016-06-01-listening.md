@@ -53,7 +53,7 @@ Being a long time follower of his exploits, this is a clear contender. Having tr
 
 ### The Moth
 
-Gripping real life stories to give some you perspective. Reading the experiences of others is one thing, but hearing them first hand carries some real impact.
+Gripping real life stories to give you some perspective. Reading the experiences of others is one thing, but hearing them first hand carries some real impact.
 
 [Listen to The Moth](https://themoth.org/podcast)
 
