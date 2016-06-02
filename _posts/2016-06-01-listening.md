@@ -48,7 +48,7 @@ Another series offering unrivalled production value with the kind of narrative a
 
 Being a long time follower of his exploits, this is a clear contender. Having tried the 4-Hour Body, I can say that Tim knows how to optimise most aspects of life. Plenty of practical content and noteworthy interviews to be found here.
 
-[Listen to The Time Ferriss Show](http://fourhourworkweek.com/podcast)
+[Listen to The Tim Ferriss Show](http://fourhourworkweek.com/podcast)
 
 
 ### The Moth
