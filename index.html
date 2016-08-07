@@ -2,36 +2,76 @@
 layout: default
 ---
 
-<div class="bb mb--double">
+<div class="mb--double">
 	<div class="container--alpha">
-		<div class="bb mb--double">
+
+		<!-- about -->
+		<div class="mb--double">
 			<div class="pb">
 
-				<h2>About</h2>
-
-	      <p>Hi, I'm Tim, I design digital products. I hold a Bachelor of Arts in Web &amp; Multimedia Design and work at <a href="http://sky.com">Sky</a>.</p>
-	      <p>You can find me online in numerous places. View my latest work on <a href="http://dribbble.com/timgale">Dribbble</a>, follow me on <a href="http://twitter.com/timgale">Twitter</a>, connect with me on <a href="http://uk.linkedin.com/pub/tim-gale/13/258/58a/">LinkedIn</a> or see what I'm listening to on <a href="http://last.fm/user/timgale">Last.fm</a>.</p>
-	      <p>For more information, drop me an <a href="mailto:tim@timothygle.co.uk">email</a>.</p>
+				<p>Hi, I'm Tim, I design digital products. I hold a Bachelor of Arts in Web &amp; Multimedia Design and work at <a href="http://sky.com">Sky</a>.</p>
+				<p>View my latest work on <a href="http://dribbble.com/timgale">Dribbble</a>, follow me on <a href="http://twitter.com/timgale">Twitter</a>, connect with me on <a href="http://uk.linkedin.com/pub/tim-gale/13/258/58a/">LinkedIn</a> or see what I'm listening to on <a href="http://last.fm/user/timgale">Last.fm</a>.</p>
 
 			</div>
 		</div>
+		<!-- /about -->
 
-		<div class="pb--double">
+		<!-- posts -->
+		<!-- <div class="pb mb--double">
 
-			<h2 class="">Latest Posts</h2>
+			<h2>Latest Posts</h2>
 
-	    <ul class="list--posts">
-	      {% for post in site.posts %}
-	        <li class="list--posts__item">
-						<h3 class="heading--charlie mb--quarter">
-	            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	          </h3>
-	          	<span class="sub-text">{{ post.date | date: "%b %-d, %Y" }}</span>
-	        </li>
-	      {% endfor %}
-	    </ul>
+			    <ul class="list--posts mb">
+			      {% for post in site.posts %}
+			      	{% if post.tags contains 'posts' %}
+				        <li class="list--posts__item">
+							<h3 class="heading--charlie mb--quarter">
+					        	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					        </h3>
+				          		<span class="sub-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+				        </li>
+			        {% endif %}
+			      {% endfor %}
+			    </ul>
 
+		</div> -->
+		<!-- /posts -->
+
+		<!-- projects -->
+		<!-- <div class="pb--double">
+			
+			<h2>Latest Projects</h2>
+
+				<ul class="list--posts">
+					{% for post in site.posts %}
+						{% if post.tags contains 'projects' %}
+						<li class="list--posts__item">
+							<h3 class="heading--charlie mb--quarter">
+								<a href="{{ post.url | preped: site.baseurl }}">{{ post.title }}</a>
+							</h3>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+
+		</div> -->
+		<!-- /projects -->
+
+		<!-- projects v2 -->
+		<div class="projects grid mb">
+			{% for post in site.posts limit: 3 %}
+				{% if post.tags contains 'projects' %}
+					<div class="projects__item" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }}">
+						<a class="projects__link" href="{{ post.url }}">
+							<h2 class="projects__name">{{ post.title }}</h2>
+						</a>
+					</div>
+				{% endif %}
+			{% endfor %}
 		</div>
+		<!-- /projects v2 -->
+
+
 
 	</div>
 </div>

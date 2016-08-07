@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="mb--double">
+	<div class="container--alpha">
+
+		<!-- posts -->
+		<div class="pb mb--double">
+
+			<h2 class="mb--double">Projects</h2>
+
+			    <!-- projects v2 -->
+				<div class="projects grid mb">
+					{% for post in site.posts %}
+						{% if post.tags contains 'projects' %}
+							<div class="projects__item {% if post.status == 'soon' %}soon{% endif %}" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }};">
+								<a class="projects__link" href="{{ post.url }}">
+									<h2 class="projects__name">{{ post.title }}</h2>
+								</a>
+								{% if post.status == 'soon' %}
+									<span class="projects__soon">In Progress</span>
+								{% endif %}
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+				<!-- /projects v2 -->
+
+		</div>
+		<!-- /posts -->
+
+	</div>
+</div>

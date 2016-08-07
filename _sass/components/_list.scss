@@ -8,16 +8,20 @@
 
 .list--nav {
   @extend .list;
+  margin: 0;
 }
 
   .list--nav__item {
     list-style-type: none;
     display: inline-block;
-  }
+    font-size: 1.2rem;
 
-    .list--nav__item.active {
-      text-decoration: underline;
+    &.is-active {
+      padding-bottom: 5px;
+      border-bottom: 2px solid rgb(6,69,173);
     }
+
+  }
 
 .list--posts {
   @extend .list;

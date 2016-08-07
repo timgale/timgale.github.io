@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="mb--double">
+	<div class="container--alpha">
+    <div class="pb--double mb--double">
+
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="mb--double">
+          <h2 class="heading--bravo mb--quarter" itemprop="name headline">{{ page.title }}</h2>
+        </header>
+
+        <div class="project-content mb--double" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+      </article>
+
+      <!-- pagination -->
+      <div class="pagination mb--double">
+        <div class="pagination__item--prev fl">
+        {% if page.title != 'Indulgent Holidays' %}
+          {% if page.previous.url %}
+            <a href="{{ page.previous.url }}">
+              <span class="text mb--quarter">&#8592; Previous Project</span>
+              <span class="sub-text">{{ page.previous.title }}</span>
+            </a>
+          {% endif %}
+        {% endif %}
+        </div>
+        <div class="pagination__item--next fr">
+          {% if page.next.url %}
+            <a href="{{ page.next.url }}">
+              <span class="text mb--quarter">Next Project &#8594;</span>
+              <span class="sub-text">{{ page.next.title }}</span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      <!-- /pagination -->
+
+    </div>
+  </div>
+</div>

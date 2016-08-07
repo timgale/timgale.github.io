@@ -1,0 +1,32 @@
+---
+layout: default
+title: Writing
+---
+
+<div class="mb--double">
+	<div class="container--alpha">
+
+		<!-- posts -->
+		<div class="pb mb--double">
+
+			<h2 class="mb--double">Writing</h2>
+
+			    <ul class="list--posts mb">
+			      {% for post in site.posts %}
+			      	{% if post.tags contains 'posts' %}
+				        <li class="list--posts__item">
+				        	<a href="{{ post.url }}">
+								<h3 class="heading--echo mb--quarter">
+						        	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+						        </h3>
+					          		<span class="sub-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+				        </li>
+			        {% endif %}
+			      {% endfor %}
+			    </ul>
+
+		</div>
+		<!-- /posts -->
+
+	</div>
+</div>

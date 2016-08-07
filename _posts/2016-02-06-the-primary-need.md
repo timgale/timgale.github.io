@@ -2,6 +2,7 @@
 layout: post
 title: The Primary Need
 date: 2016-02-05
+tags: posts
 ---
 
 One of the first things to ask when approaching a problem is, “what is the user trying to achieve here?”. Closely followed by “how do they currently do this?” and “should they even need to do this?”.

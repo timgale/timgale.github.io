@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  Pagination
+\*----------------------------------------*/
+
+.pagination {
+
+	&__item {
+
+		&--prev {
+
+			.sub-text {
+				position: relative;
+				left: 20px;
+			}
+
+		}
+
+	}
+
+	.text {
+		display: block;
+	}
+
+	.sub-text {
+		display: block;
+	}
+
+}
