@@ -17,8 +17,8 @@
 		margin: ($spacing-base * 3) 0 ($spacing-base * 2) 0;
 
 		@media (max-width: 700px) {
-			left: 0;
-			width: 100%;
+			left: 0 !important;
+			width: 100% !important;
 			height: auto;
 		}
 

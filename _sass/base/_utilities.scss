@@ -19,8 +19,20 @@ hr {
 }
 
 // floats
-.fl { float: left; }
-.fr { float: right; }
+.fl { 
+	float: left; 
+
+	@media (max-width: 700px) {
+		float: none;
+	}
+}
+.fr { 
+	float: right; 
+
+	@media (max-width: 700px) {
+		float: none;
+	}
+}
 
 // spacing
 .mb          { margin-bottom: $spacing-base; }
