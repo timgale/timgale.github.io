@@ -7,7 +7,6 @@ tags: projects
 background-image: /images/project-sportmate-dashboard-dark.png
 background-size: 400px
 background-position: -70px 20px
-background-position-mobile: 120px 20px
 ---
 
 ### Background

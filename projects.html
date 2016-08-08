@@ -15,7 +15,7 @@ title: Projects
 				<div class="projects grid mb">
 					{% for post in site.posts %}
 						{% if post.tags contains 'projects' %}
-							<div class="projects__item {% if post.status == 'soon' %}soon{% endif %}" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }};">
+							<div class="projects__item {{ post.name }} {% if post.status == 'soon' %}soon{% endif %}" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }};">
 								<a class="projects__link" href="{{ post.url }}">
 									<h2 class="projects__name">{{ post.title }}</h2>
 								</a>

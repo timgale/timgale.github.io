@@ -150,3 +150,21 @@
 	}
 	
 }
+
+// project specific media queries
+
+.projects__item.traveljunction {
+	background-position: 20px 90%;
+
+	@media (max-width: 700px) {
+		background-position: 120px 20px;
+	}
+}
+
+.projects__item.papertrail {
+	background-position: 20px 90%;
+
+	@media (max-width: 700px) {
+		background-position: 20px 100px;
+	}
+}
