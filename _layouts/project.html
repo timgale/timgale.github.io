@@ -20,7 +20,7 @@ layout: default
 
       <!-- pagination -->
       <div class="pagination mb--double">
-        <div class="pagination__item--prev fl">
+        <div class="pagination__item--prev fl-m">
         {% if page.title != 'Indulgent Holidays' %}
           {% if page.previous.url %}
             <a href="{{ page.previous.url }}">
@@ -30,7 +30,7 @@ layout: default
           {% endif %}
         {% endif %}
         </div>
-        <div class="pagination__item--next fr">
+        <div class="pagination__item--next fr-m">
           {% if page.next.url %}
             <a href="{{ page.next.url }}">
               <span class="text mb--quarter">Next Project &#8594;</span>

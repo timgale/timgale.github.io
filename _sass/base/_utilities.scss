@@ -26,12 +26,18 @@ hr {
 		float: none;
 	}
 }
+.fl-m {
+  float: left !important;
+}
 .fr { 
-	float: right; 
+	float: right;
 
 	@media (max-width: 700px) {
 		float: none;
 	}
+}
+.fr-m {
+  float: right !important;
 }
 
 // spacing
