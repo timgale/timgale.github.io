@@ -26,7 +26,7 @@ The task was to provide users with an intuitive interface to browse, filter and 
 Providing users with enough information to make an informed decision was imperative. The majority of this information would be surfaced as part of the property details view, as well as hosting room availability and booking options.
 
 Iterating quite heavily around the room selection process, we refined this initial step in the booking process to increase clarity to allow users to quickly scan their options. By taking inspiration from
-proven practices in this space and gathering qualitative research, we we're able to build a solution that resonated well with our audience.
+proven practices in this space and gathering qualitative research, we were able to build a solution that resonated well with our audience.
 
 ![alt](/images/project-traveljunction-flights_results_mobile.jpg)
 
