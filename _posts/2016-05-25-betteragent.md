@@ -7,7 +7,6 @@ tags: projects
 background-image: /images/project-betteragent_lead.png
 background-size: 600px
 background-position: -30px 85px
-status: soon
 ---
 
 ![alt](/images/project-better_agent-home.jpg)
