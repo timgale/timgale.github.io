@@ -1,7 +1,7 @@
 ---
 layout: project
 title: BetterAgent
-date: 2016-06-25
+date: 2016-06-24
 category: projects
 tags: projects
 background-image: /images/project-betteragent_lead.png

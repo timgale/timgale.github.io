@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Indulgent Holidays
-date: 2016-06-25
+date: 2016-06-23
 category: projects
 tags: projects
 background-image: /images/project-indulgent_holidays_lead.png

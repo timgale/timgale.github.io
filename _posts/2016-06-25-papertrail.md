@@ -2,7 +2,7 @@
 layout: project
 title: Papertrail
 name: papertrail
-date: 2016-06-25
+date: 2016-06-22
 category: projects
 tags: projects
 background-image: /images/project-papertrail-record_management.png
