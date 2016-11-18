@@ -25,7 +25,7 @@ When looking to make an informed decision, users should be given enough informat
 
 ### Mapping the journey
 
-Defining the core user flow required a solid understanding of all potential entry points  to the comparison search results. While the homepage postcode lookup may be a primary touch point for users looking to fulfil their goal, in reality, there is scope for many more routes to landing on the results page. Consideration for alternate entry points means taking into various initiatives including email campaigns and search engine marketing, as well organic user behaviour.
+Defining the core user flow required a solid understanding of all potential entry points  to the comparison search results. While the homepage postcode lookup may be a primary touch point for users looking to fulfil their goal, in reality, there is scope for many more routes to landing on the results page. Consideration for alternate entry points means taking into account various initiatives including email campaigns and search engine marketing, as well organic user behaviour.
 
 ![alt](/images/better_agent_mobile_wireframes.jpg)
 
