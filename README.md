@@ -1,1 +1,1 @@
-Personal Website of Timothy Gale
+Personal Website of Tim Gale

@@ -2,7 +2,7 @@
 layout: project
 title: SportMate
 date: 2016-06-25
-category: projects
+categories: projects
 tags: projects
 background-image: /images/project-sportmate-dashboard-dark.png
 background-size: 400px

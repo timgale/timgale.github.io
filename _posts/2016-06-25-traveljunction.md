@@ -3,7 +3,7 @@ layout: project
 title: Travel Junction
 name: traveljunction
 date: 2016-06-25
-category: projects
+categories: projects
 tags: projects
 background-image: /images/project-traveljunction-flights_home.png
 background-size: 800px

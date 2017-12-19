@@ -3,6 +3,7 @@ layout: post
 title: Listening
 date: 2016-06-01
 tags: posts
+categories: posts
 ---
 
 I've read a lot of great books this year. I've also listened to a lot of great content through various podcasts. Whilst naturally flocking to the design related material to begin with, I quickly discovered there's so much more content to unlock, with far less risk involved compared to committing to a new hardback.

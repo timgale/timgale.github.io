@@ -2,7 +2,7 @@
 layout: project
 title: BetterAgent
 date: 2016-06-24
-category: projects
+categories: projects
 tags: projects
 background-image: /images/project-betteragent_lead.png
 background-size: 600px

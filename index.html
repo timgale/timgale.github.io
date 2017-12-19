@@ -6,14 +6,14 @@ layout: default
 	<div class="container--alpha">
 
 		<!-- about -->
-		<div class="mb--double">
+		<!-- <div class="mb--double"> -->
 			<div class="pb">
 
-				<p>Hi, I'm Tim, I design digital products. I hold a Bachelor of Arts in Web &amp; Multimedia Design and work at <a href="http://sky.com">Sky</a>.</p>
+				<p>Hi, I'm Tim. I design digital products and work at <a href="http://clicksco.com">Clicksco</a>.</p>
 				<p>View a selection of my work on <a href="http://dribbble.com/timgale">Dribbble</a>, follow me on <a href="http://twitter.com/timgale">Twitter</a>, connect with me on <a href="http://uk.linkedin.com/pub/tim-gale/13/258/58a/">LinkedIn</a> or see what I'm listening to on <a href="http://last.fm/user/timgale">Last.fm</a>.</p>
 
 			</div>
-		</div>
+		<!-- </div> -->
 		<!-- /about -->
 
 		<!-- posts -->
@@ -58,9 +58,9 @@ layout: default
 		<!-- /projects -->
 
 		<!-- projects v2 -->
-		<div class="projects grid mb">
-			{% for post in site.posts limit: 3 %}
-				{% if post.tags contains 'projects' %}
+		<!-- <div class="projects grid mb">
+			{% for post in site.categories.projects limit: 3 %}
+				{% if post.url %}
 					<div class="projects__item {{ post.name }}" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }}">
 						<a class="projects__link" href="{{ post.url }}">
 							<h2 class="projects__name">{{ post.title }}</h2>
@@ -68,7 +68,7 @@ layout: default
 					</div>
 				{% endif %}
 			{% endfor %}
-		</div>
+		</div> -->
 		<!-- /projects v2 -->
 
 
