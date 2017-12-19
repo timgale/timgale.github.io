@@ -21,20 +21,26 @@ layout: default
       <!-- pagination -->
       <div class="pagination mb--double">
         <div class="pagination__item--prev fl-m">
-          {% if page.previous_in_category.url %}
-            <a href="{{ page.previous_in_category.url }}">
+          {% if page.previous != 'nil' %}
+            {% if page.title == 'TJFA' %}
+            {% else %}
+            <a href="{{ page.previous.url }}">
               <span class="text mb--quarter">&#8592; Previous Project</span>
-              <span class="sub-text">{{ page.previous_in_category.title }}</span>
+              <span class="sub-text">{{ page.previous.title }}</span>
             </a>
+            {% endif %}
           {% endif %}
         
         </div>
         <div class="pagination__item--next fr-m">
-            {% if page.next_in_category.url %}
-              <a href="{{ page.next_in_category.url }}">
-                <span class="text mb--quarter">Next Project &#8594;</span>
-                <span class="sub-text">{{ page.next_in_category.title }}</span>
-              </a>
+            {% if page.next != 'nil' %}
+              {% if page.title == 'Travel Junction' %}
+              {% else %}
+                <a href="{{ page.next.url }}">
+                  <span class="text mb--quarter">Next Project &#8594;</span>
+                  <span class="sub-text">{{ page.next.title }}</span>
+                </a>
+              {% endif %}
             {% endif %}
         </div>
       </div>
