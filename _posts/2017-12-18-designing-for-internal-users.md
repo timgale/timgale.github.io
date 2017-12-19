@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving in with the User
+title: Designing for Internal Users
 date: 2017-12-19
 tags: posts
 categories: posts
