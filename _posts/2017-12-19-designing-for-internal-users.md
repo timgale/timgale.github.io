@@ -34,7 +34,7 @@ While it might have seemed preferable, from an operations point of view, to only
 
 To minimise interruption, we set aside time each week to shadow team members as they carried out data entry using the *live* system, observing behaviours and their reactions to system feedback. We limited the number of observers during this time, typically only 1 per user, in an effort to not overwhelm or distract participants.
 
-The relationships we’d built with team managers helped us address this potential hurdle and continuing with our research. Through previous contextual studies and co-design workshops, we’d already demonstrated how we not only address issues with their workflow, but encourage the wider business to be involved in the design process.
+The relationships we’d built with team managers helped us address this potential hurdle and continue with our research. Through previous contextual studies and co-design workshops, we’d already demonstrated how we not only address issues with their workflow, but encourage the wider business to be involved in the design process.
 
 By being completely transparent with both our users and business stakeholders, all those involved understood that continuous questioning and testing of our products would benefit everyone.
 
