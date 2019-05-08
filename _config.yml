@@ -8,7 +8,8 @@
 # Site settings
 title: Tim Gale • Product Designer
 email: tim@timgale.me
-description:
+description: The blog and portfolio of Tim Gale
+repository: timgale/timgale.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://timgale.me" # the base hostname & protocol for your site
 twitter_username: timgale
