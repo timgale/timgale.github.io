@@ -1,6 +1,7 @@
 ---
 layout: project
 title: SportMate
+permalink: /projects/sportmate/
 date: 2016-06-25
 categories: projects
 tags: projects

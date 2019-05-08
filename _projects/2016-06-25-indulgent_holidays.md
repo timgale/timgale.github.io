@@ -1,12 +1,13 @@
 ---
 layout: project
 title: Indulgent Holidays
+permalink: /projects/indulgent-holidays/
 date: 2016-06-23
 categories: projects
 tags: projects
 background-image: /images/project-indulgent_holidays_lead.png
 background-size: 800px
-background-position: 160px -100px
+background-position: 0 70px
 ---
 
 ### Background

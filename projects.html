@@ -11,22 +11,20 @@ title: Projects
 
 			<h2 class="mb--double">Projects</h2>
 
-			    <!-- projects v2 -->
+				<!-- projects v3 -->
 				<div class="projects grid mb">
-					{% for post in site.posts %}
-						{% if post.tags contains 'projects' %}
-							<div class="projects__item {{ post.name }} {% if post.status == 'soon' %}soon{% endif %}" style="background-image:url({{ post.background-image }}); background-size:{{ post.background-size }}; background-position:{{ post.background-position }};">
-								<a class="projects__link" href="{{ post.url }}">
-									<h2 class="projects__name">{{ post.title }}</h2>
-								</a>
-								{% if post.status == 'soon' %}
-									<span class="projects__soon">In Progress</span>
-								{% endif %}
-							</div>
-						{% endif %}
+					{% for project in site.projects reversed %}
+						<div class="projects__item {{ project.title }} {% if project.status == 'soon' %}soon{% endif %}" style="background-image:url({{ project.background-image }}); background-size:{{ project.background-size }}; background-position:{{ project.background-position }};">
+							<a class="projects__link" href="{{ project.url }}">
+								<h2 class="projects__name">{{ project.title }}</h2>
+							</a>
+							{% if project.status == 'soon' %}
+								<span class="projects__soon">In Progress</span>
+							{% endif %}
+						</div>
 					{% endfor %}
 				</div>
-				<!-- /projects v2 -->
+				<!-- /projects v3 -->
 
 		</div>
 		<!-- /posts -->

@@ -2,11 +2,13 @@
 layout: project
 title: Papertrail
 name: papertrail
+permalink: /projects/papertrail/
 date: 2016-06-22
 categories: projects
 tags: projects
 background-image: /images/project-papertrail-record_management.png
 background-size: 300px
+background-position: 25px 75px
 status: live
 ---
 

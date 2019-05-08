@@ -1,12 +1,13 @@
 ---
 layout: project
 title: BetterAgent
+permalink: /projects/betteragent/
 date: 2016-06-24
 categories: projects
 tags: projects
 background-image: /images/project-betteragent_lead.png
 background-size: 600px
-background-position: -30px 85px
+background-position: 0 85px
 ---
 
 ![alt](/images/project-better_agent-home.jpg)

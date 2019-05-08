@@ -17,6 +17,8 @@ future: true
 menuitems:
   - url: /writing/
     title: Writing
+  - url: /Speaking/
+    title: Speaking
   - url: /projects/
     title: Projects
 
@@ -24,5 +26,12 @@ menuitems:
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 
+# Sass settings
 sass:
     sass_dir: _sass
+
+# Collection settings
+collections:
+    projects:
+      output: true
+      permalink: /:collection/:title
