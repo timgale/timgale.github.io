@@ -3,8 +3,25 @@
 \*----------------------------------------*/
 
 // Typography
-$font-family-alpha: "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
-$font-family-bravo: "freight-text-pro", Georgia, serif;
+@font-face {
+font-family: "hk-grotesk-regular";
+src: url("/fonts/hkgrotesk-regular.eot"),
+	 url('/fonts/hkgrotesk-regular.woff2') format('woff2'),
+     url('/fonts/hkgrotesk-regular.woff') format('woff'),
+	 url("/fonts/hkgrotesk-regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: "hk-grotesk-semi-bold";
+src: url("/fonts/hkgrotesk-semibold.eot"),
+	 url('/fonts/hkgrotesk-semibold.woff2') format('woff2'),
+     url('/fonts/hkgrotesk-semibold.woff') format('woff'),
+	 url("/fonts/hkgrotesk-semibold.otf") format("opentype");
+}
+
+$font-family-alpha: "hk-grotesk-regular", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
+$font-family-bravo: "hk-grotesk-semi-bold", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
+$font-family-charlie: "freight-text-pro", Georgia, serif;
 $font-size-base:   17px;
 $line-height-base: 32px;
 

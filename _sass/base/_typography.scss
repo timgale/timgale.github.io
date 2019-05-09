@@ -12,14 +12,14 @@ h5,
 h6 { margin: 0; }
 
 .heading {
-  font-family: $font-family-alpha;
+  font-family: $font-family-bravo;
   padding: 0;
 }
 
   .heading--alpha {
     @extend .heading;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
     color: #444444;
 
@@ -31,7 +31,7 @@ h6 { margin: 0; }
   .heading--bravo {
     @extend .heading;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #444444;
   }
 
@@ -39,7 +39,7 @@ h6 { margin: 0; }
     @extend .heading;
     margin-top: 0;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #444444;
   }
 
@@ -87,7 +87,7 @@ h3 {
 // Paragraphs
 
 p {
-  font-family: $font-family-bravo;
+  font-family: $font-family-alpha;
   @extend .mb;
   font-size: 1.35rem;
   line-height: 1.85em;
