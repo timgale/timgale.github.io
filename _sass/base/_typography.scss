@@ -83,6 +83,11 @@ h3 {
 
 }
 
+h4 {
+  @extend .heading;
+  @extend .mb;
+  font-size: 1.35rem;  
+}
 
 // Paragraphs
 
@@ -128,4 +133,26 @@ blockquote {
 
 .wf-loading {
   visibility: hidden;
+}
+
+
+// Lists
+
+ol, ul {
+
+  li {
+    font-size: 1.35rem;
+    line-height: 1.85em;
+    color: #666;
+  }
+
+}
+
+
+// Code
+
+code {
+  background: #333;
+  color: #f5f5f5;
+  padding: $spacing-base/2;
 }

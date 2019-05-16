@@ -18,6 +18,8 @@ Let's take a look at a few ways to use the tools at our disposal to give us indi
 
 But first, a couple of definitions.
 
+Quantify the value of design to the wider organisation.
+
 
 ### What is success?
 
