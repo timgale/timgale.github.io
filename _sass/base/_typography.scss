@@ -86,7 +86,8 @@ h3 {
 h4 {
   @extend .heading;
   @extend .mb;
-  font-size: 1.35rem;  
+  margin-top: ($spacing-base * 2);
+  font-size: 1.35rem; 
 }
 
 // Paragraphs
