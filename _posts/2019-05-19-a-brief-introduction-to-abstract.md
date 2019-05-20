@@ -4,6 +4,7 @@ title: A Brief Introduction to Abstract
 date: 2019-05-19
 tags: posts
 categories: posts
+image: /images/abstract_logo.png
 ---
 
 <img alt="Abstract Logo" src="/images/abstract_logo.svg" width="200px" />
