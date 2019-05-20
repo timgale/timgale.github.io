@@ -4,7 +4,7 @@ title: A Brief Introduction to Abstract
 date: 2019-05-19
 tags: posts
 categories: posts
-image: /images/abstract_logo.png
+image: /images/abstract_logo_card.png
 summary: What is Abstract and how can I use it with my design team?
 ---
 
