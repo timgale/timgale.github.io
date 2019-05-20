@@ -9,10 +9,26 @@
   <meta name="author" content="Tim Gale" />
 
   <!-- twitter summary card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@timgale" />
-  <meta name="twitter:title" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:image" content="{{ post.image }}" />
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@timgale">
+<meta name="twitter:creator" content="@timgale">
+<meta name="twitter:title"   content="{{ page.title }}">
+
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.title_image }}">
+{% endif %}
+<!-- end of Twitter cards -->
+
   <!-- /twitter summary card -->
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">

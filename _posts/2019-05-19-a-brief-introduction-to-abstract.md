@@ -5,6 +5,7 @@ date: 2019-05-19
 tags: posts
 categories: posts
 image: /images/abstract_logo.png
+summary: What is Abstract and how can I use it with my design team?
 ---
 
 <img alt="Abstract Logo" src="/images/abstract_logo.svg" width="200px" />
