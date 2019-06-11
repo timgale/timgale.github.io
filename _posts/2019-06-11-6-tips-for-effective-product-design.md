@@ -6,7 +6,7 @@ tags: posts
 categories: posts
 image: /images/product_design_tips_card.png
 image_small: /images/product_design_tips_card.png
-summary: Principles to give your users a seamless user experience
+summary: Principles to give your users a seamless experience
 ---
 
 
