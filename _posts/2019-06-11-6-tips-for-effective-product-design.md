@@ -14,8 +14,15 @@ Once you have a clear understanding of the needs of the people using your produc
 
 The following tips have proved to be valuable from my personal experience when designing software.
 
+1. <a href="#tip-give-feedback">Give Feedback</a>
+2. <a href="#tip-dont-rely-on-recollection">Don't rely on recollection</a>
+3. <a href="#tip-reduce-visual-load">Reduce the visual load</a>
+4. <a href="#tip-be-consistent">Be consistent</a>
+5. <a href="#tip-allow-for-flexibility">Allow for flexibility</a>
+6. <a href="#tip-progressive-disclosure">Progressively disclose information</a>
 
-### Tip 1 - Give feedback
+
+### Tip 1 - Give feedback {#tip-give-feedback}
 
 Don’t keep people in the dark, wondering if that button press took any effect.
 
@@ -26,7 +33,7 @@ By introducing <a href="https://www.nngroup.com/articles/microinteractions/" tar
 Microinteractions can be incredibly simple while being very effective. Ensuring you add two-way conversations into your interface shouldn’t be an after thought.
 
 
-### Tip 2 - Don’t rely on recollection
+### Tip 2 - Don’t rely on recollection {#tip-dont-rely-on-recollection}
 
 Relying on memory is risky, especially when it comes to dealing with important information.
 
@@ -37,7 +44,7 @@ There can be a lot at stake when people are moving between different states in a
 Let the software do what’s it’s good at and remember important information so your users don’t have to.
 
 
-### Tip 3 - Reduce the visual load
+### Tip 3 - Reduce the visual load {#tip-reduce-visual-load}
 
 Categorise related data into organised groups.
 
@@ -48,7 +55,7 @@ In the context of interface design, by using clear content blocks, <a href="http
 Everything presented to your users should have a purpose.
 
 
-### Tip 4 - Be consistent
+### Tip 4 - Be consistent {#tip-be-consistent}
 
 Straying away from platform conventions too much can be detrimental to the user experience.
 
@@ -57,7 +64,7 @@ People have become acustomed to expect certain behaviours from inputs and form e
 Take advantage of people’s past experiences and use tried and tested patterns.
 
 
-### Tip 5 - Allow for flexibility
+### Tip 5 - Allow for flexibility {#tip-allow-for-flexibility}
 
 There are likely going to be people with mixed levels of ability using your product. It’s important to do your best to cater for each visitor, whether they are new to the platform, or an experienced user.
 
@@ -66,7 +73,7 @@ Ensuring a suitable onboarding process is in place for first-time users can be a
 Enabling keyboard shortcuts for common actions can also be a useful technique, giving those who are comfortable with the product the ability to save time when completing common tasks.
 
 
-### Tip 6 - Progressively disclose information
+### Tip 6 - Progressively disclose information {#tip-progressive-disclosure}
 
 Don’t be afraid to hold back information if it’s not immediately required.
 
