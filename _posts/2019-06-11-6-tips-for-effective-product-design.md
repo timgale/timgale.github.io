@@ -50,7 +50,7 @@ Categorise related data into organised groups.
 
 By following Gestalt’s <a href="https://lawsofux.com/law-of-proximity" target="_blank">Law of proximity</a>, we can determine that people perceive information to be related when visually grouped.
 
-In the context of interface design, by using clear content blocks, <a href="https://material.io/design/components/cards.html" target="_blank">cards</a>or even white space, you are able to reduce unnecessary visual load and make content easier to scan.
+In the context of interface design, by using clear content blocks, <a href="https://material.io/design/components/cards.html" target="_blank">cards</a> or even white space, you are able to reduce unnecessary visual load and make content easier to scan.
 
 Everything presented to your users should have a purpose.
 
