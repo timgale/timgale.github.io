@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 6 Principles for Product Design
+title: 6 Tips for Product Design
 date: 2019-06-11
 tags: posts
 categories: posts
@@ -9,7 +9,7 @@ categories: posts
 
 Once you have a clear understanding of the needs of the people using your website or product, it’s crucial to ensure their experience is as seamless as possible.
 
-The following 6 tips have proved to be valuable from my personal experience of designing software.
+The following tips have proved to be valuable from my personal experience of designing software.
 
 
 ### Tip 1 - Give feedback
