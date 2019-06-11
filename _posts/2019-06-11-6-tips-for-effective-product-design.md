@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 6 Tips for Product Design
+title: 6 Tips for Effective Product Design
 date: 2019-06-11
 tags: posts
 categories: posts
+image: /images/product_design_tips_card.png
+summary: 6 tips to help create a seamless user experience.
 ---
 
 
@@ -74,4 +76,4 @@ Grouping form data into multiple steps can also mean small chunks of information
 
 ### Summary
 
-There are many ways to optimise people’s digital experiences depending on your circumstances. Hopefully you can apply these tips to optimise your users’ experience.
+There are many ways to optimise people’s digital experiences depending on your circumstances. Hopefully you can apply these tips to optimise your own users’ experience.
