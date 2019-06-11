@@ -5,6 +5,7 @@ date: 2019-05-19
 tags: posts
 categories: posts
 image: /images/abstract_logo_card.png
+image_small: /images/abstract_logo_card.png
 summary: Overview and tips from my experience using Abstract.
 ---
 

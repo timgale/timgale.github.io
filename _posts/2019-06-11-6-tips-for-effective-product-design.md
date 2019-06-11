@@ -5,7 +5,8 @@ date: 2019-06-11
 tags: posts
 categories: posts
 image: /images/product_design_tips_card.png
-summary: 6 tips to help create a seamless user experience.
+image_small: /images/product_design_tips_card.png
+summary: Principles to give your users a seamless user experience
 ---
 
 
