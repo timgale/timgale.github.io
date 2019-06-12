@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Indulgent Holidays
+summary: Interface design for Indulgent Holidays, the luxury online travel booking service
 permalink: /projects/indulgent-holidays/
 date: 2016-06-23
 categories: projects

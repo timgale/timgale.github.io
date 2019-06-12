@@ -1,6 +1,7 @@
 ---
 layout: project
 title: SportMate
+summary: iOS and Andoird design for SportMate, the football score aggregator
 permalink: /projects/sportmate/
 date: 2016-06-25
 categories: projects

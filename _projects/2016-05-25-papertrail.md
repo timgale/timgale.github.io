@@ -2,6 +2,7 @@
 layout: project
 title: Papertrail
 name: papertrail
+summary: Web and mobile design for papertrail.io, the inspection management system
 permalink: /projects/papertrail/
 date: 2016-06-22
 categories: projects

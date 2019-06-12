@@ -1,6 +1,7 @@
 ---
 layout: project
 title: BetterAgent
+summary: Web and mobile design for BetterAgent, the online real esate agent comparison site.
 permalink: /projects/betteragent/
 date: 2016-06-24
 categories: projects
