@@ -77,7 +77,7 @@ Enabling keyboard shortcuts for common actions can also be a useful technique, g
 
 Don’t be afraid to hold back information if it’s not immediately required.
 
-Give people enough detail needed to complete a specific task, but no more. This is particularly crucial when requesting information through lengthly forms. Breaking down content into logical steps allows people to focus on one thing at a time, reducing the potential for mistakes.
+Give people enough detail needed to complete a specific task, but no more. This is particularly crucial when requesting information through lengthy forms. Breaking down content into logical steps allows people to focus on one thing at a time, reducing the potential for mistakes.
 
 Grouping form fields into multiple steps could also mean small chunks of information can be saved independently, limiting the loss of progress if people need to switch context unexpectedly.
 
