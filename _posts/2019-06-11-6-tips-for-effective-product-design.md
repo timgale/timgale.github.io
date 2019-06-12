@@ -41,7 +41,7 @@ Short term memory can be very fragile and only a small amount of information can
 
 There can be a lot at stake when people are moving between different states in an application or website, particularly when  you are required to recall and repeat information you may have provided elsewhere.
 
-Let the software do what’s it’s good at and remember important information so your users don’t have to.
+Let the software do what it's good at and remember important information so your users don’t have to.
 
 
 ### Tip 3 - Reduce the visual load {#tip-reduce-visual-load}
@@ -59,7 +59,7 @@ Everything presented to your users should have a purpose.
 
 Straying away from platform conventions too much can be detrimental to the user experience.
 
-People have become acustomed to expect certain behaviours from inputs and form elements and have likely built up <a href="https://www.nngroup.com/articles/mental-models/" target="_blank">mental models</a> of how to interact with content across multiple platforms. Applying too much customisation for the sake of form over function could hinder usage and unnecessarily increase <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">cognitive load</a>. 
+People have become accustomed to expect certain behaviours from inputs and form elements and have likely built up <a href="https://www.nngroup.com/articles/mental-models/" target="_blank">mental models</a> of how to interact with content across multiple platforms. Applying too much customisation for the sake of form over function could hinder usage and unnecessarily increase <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">cognitive load</a>. 
 
 Take advantage of people’s past experiences and use tried and tested patterns.
 
