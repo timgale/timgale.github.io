@@ -7,6 +7,7 @@ tags: posts
 categories: posts
 image: /images/product_design_tips_card.png
 image_small: /images/product_design_tips_card.png
+keywords: [ux,product,web,design,user,experience,cognitive,load,progressive,disclosure]
 ---
 
 

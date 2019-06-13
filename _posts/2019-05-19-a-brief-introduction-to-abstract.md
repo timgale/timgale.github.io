@@ -7,6 +7,7 @@ tags: posts
 categories: posts
 image: /images/abstract_logo_card.png
 image_small: /images/abstract_logo_card.png
+keywords: [abstract,design,version,control,tools,sketch,ux,web]
 ---
 
 <img alt="Abstract Logo" src="/images/abstract_logo.svg" width="200px" />

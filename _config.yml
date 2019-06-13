@@ -36,7 +36,3 @@ collections:
     projects:
       output: true
       permalink: /:collection/:title
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
