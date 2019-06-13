@@ -14,5 +14,29 @@ layout: default
 		</div>
 		<!-- /about -->
 
+		<!-- latest posts -->
+		<div class="pb mb--double">
+
+			<h3 class="heading--alpha mb--double">Latest Posts</h2>
+
+			    <ul class="list--posts mb">
+			      {% for post in site.posts limit:2 %}
+			      	{% if post.tags contains 'posts' %}
+				        <li class="list--posts__item">
+				        	<a href="{{ post.url }}">
+								<h3 class="heading--echo">
+						        	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+						        </h3>
+					          		<span class="sub-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+				        </li>
+			        {% endif %}
+			      {% endfor %}
+			    </ul>
+
+			    <p><a href="/writing">View all posts</a></p>
+
+		</div>
+		<!-- /latest posts -->
+
 	</div>
 </div>
