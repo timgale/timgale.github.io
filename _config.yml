@@ -9,6 +9,7 @@
 title: Tim Gale · Product Designer
 email: tim@timgale.me
 description: The blog and portfolio of Tim Gale, Product Designer
+keywords: [ux,web,design,product,blog,portfolio]
 repository: timgale/timgale.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://timgale.me" # the base hostname & protocol for your site
