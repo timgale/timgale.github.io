@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Primary Need
+summary: How focusing on people's primary need can improve their digital experiences
 date: 2016-02-05
 tags: posts
 categories: posts

@@ -2,6 +2,7 @@
 layout: project
 title: Travel Junction
 name: traveljunction
+summary: Web and mobile design for Travel Junction, the online holiday booking website
 permalink: /projects/travel-junction/
 date: 2016-06-25
 categories: projects

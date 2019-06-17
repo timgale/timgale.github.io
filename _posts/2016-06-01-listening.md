@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Listening
+summary: A roundup of the best podcasts for designers
 date: 2016-06-01
 tags: posts
 categories: posts

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing for Internal Users
+summary: Useful methods to address the challenges faced when designing for an internal user base
 date: 2017-12-19
 tags: posts
 categories: posts
