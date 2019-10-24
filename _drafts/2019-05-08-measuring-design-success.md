@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Measuring Design Success
+summary: Methods to understand if our design decisions are successful
 date: 2019-05-08
 tags: posts
 categories: posts
