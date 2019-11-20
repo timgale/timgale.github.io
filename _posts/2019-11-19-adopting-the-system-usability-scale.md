@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adopting the System Usability Scale
-summary: Adopting the System Usability Scale
+summary: Measuring product usability and client satisfaction
 date: 2019-11-20
 tags: posts
 categories: posts
