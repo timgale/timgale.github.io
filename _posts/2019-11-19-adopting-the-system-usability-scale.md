@@ -10,7 +10,7 @@ image_small: /images/system_usability_scale_card.png
 keywords: [ux,product,web,design,user,experience,system,usability,scale,load,measure,research,metric,stats,data]
 ---
 
-Within the product team at Carbon, we are always exploring different ways to measure the impact we have on our customer’s lives. Through new user interviews and regular feature usability testing, we’ve become more and more confident that we’re solving the right problems for the people using our products.
+Within the product team at <a href="https://carbondmp.com" target="_blank">Carbon</a>, we are always exploring different ways to measure the impact we have on our customer’s lives. Through new user interviews and regular feature usability testing, we’ve become more and more confident that we’re solving the right problems for the people using our products.
 
 Although the insights we gain from speaking with our customers are instrumental in the progression of our offering, we introduced the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">System Usability Scale (SUS)</a> as a measure to give us a high level benchmark when monitoring the satisfaction people experience whilst using our product. This takes the form of a multiple choice 10 question survey that prompts people to score the usability of Carbon, resulting in a single metric. Since doing so we’ve noticed a significant shift in two key areas:
 
