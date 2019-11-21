@@ -29,7 +29,7 @@ An additional side effect of this approach is that many participants have expres
 
 ### Shared ownership
 
-At the end of each quarter our product team share a recap of research findings, including the changes in SUS score, along with how product updates might have impacted the score. This really helps to highlight correlations between features delivered and the end user response. As a result, the wider tech and commercial teams have come to reference the SUS score as a consistent benchmark, resulting in positive steps towards a shared appreciation for delivering the best experience possible for our customers.
+At the end of each sprint our product team share a recap of research findings, including the changes in SUS score, along with how product updates might have impacted the score. This really helps to highlight correlations between features delivered and the end user response. As a result, the wider tech and commercial teams have come to reference the SUS score as a consistent benchmark, resulting in positive steps towards a shared appreciation for delivering the best experience possible for our customers.
 
 Although the SUS score doesn’t give the complete picture into *why* people are feeling a certain way, it certainly has it's place as a method to help guide our research when delving deeper to *uncover* the why.
 
