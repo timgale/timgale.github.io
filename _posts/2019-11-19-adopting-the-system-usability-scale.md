@@ -23,7 +23,7 @@ We regularly run usability tests with our core user base (every sprint, in fact)
 
 In efforts to complement this in-person testing with additional measures, we’ve previously tested routinely reaching out to our user base for feedback using incentives as a persuasion mechanism. In our particular case we found responses to be fairly vague, typically as a result of the person being out of the context of use. Using the SUS survey we have instead pivoted to asking participants to provide structured feedback following a usability test.
 
-Having people complete this survey immediately after interacting with the product, as oppose to receiving an ad hoc request, has dramatically improved response rates. Not only this, but the approach ensures as much as possible a consistent scenario and mindset. This is all extremely beneficial when using the these metrics to track the fluctuation in responses over time.
+Having people complete this survey immediately after interacting with the product, as oppose to receiving an ad hoc request, has dramatically improved response rates. Not only this, but the approach ensures as much as possible a consistent scenario and mindset. This is all extremely beneficial when using these metrics to track the fluctuation in responses over time.
 
 An additional side effect of this approach is that many participants have expressed they feel much more valued as a customer when asked to provide this feedback in person, particularly when issues they have faced have been addressed with subsequent updates to the product.
 
