@@ -1,0 +1,47 @@
+/*----------------------------------------*\
+  Container
+\*----------------------------------------*/
+
+.reading {
+
+	overflow: auto;
+	background-color: rgb(246, 247, 250);
+	padding: $spacing-base;
+	border-radius: 6px;
+
+	h3 {
+		margin-top: 0;
+	}
+
+	&__book-details {
+		display: inline-block;
+		width: 75%;
+	}
+
+	h4 {
+		margin-top: 32px;
+	}
+
+	&__book-image {
+		width: 100px;
+		box-shadow: 0 0.250em 0.375em rgba(50,50,93,.09), 0 0.063em 0.188em rgba(0,0,0,.08);
+	}
+
+	@media (max-width: $view-medium) {
+
+		&__book-details {
+			display: block;
+			margin-bottom: $spacing-base;
+		}
+
+	}
+
+	@media (max-width: $view-small) {
+
+		&__book-details {
+			width: 100%;
+		}
+
+	}
+
+}
