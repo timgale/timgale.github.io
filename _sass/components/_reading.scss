@@ -4,13 +4,16 @@
 
 .reading {
 
+	margin: 0 auto $spacing-base * 2 auto;
 	overflow: auto;
 	background-color: rgb(246, 247, 250);
 	padding: $spacing-base;
 	border-radius: 6px;
+	width: 75%;
 
 	h3 {
 		margin-top: 0;
+		color: #1B202B;
 	}
 
 	&__book-details {

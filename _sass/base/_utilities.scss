@@ -4,6 +4,7 @@
 
 // Typography
 .text-center { text-align: center; }
+.text-right  { text-align: right;  }
 
 // borders
 .bb {
@@ -45,9 +46,11 @@ hr {
 .mb--half    { margin-bottom: ($spacing-base / 2); }
 .mb--quarter { margin-bottom: ($spacing-base / 4); }
 .mb--double  { margin-bottom: ($spacing-base * 2); }
+.mb--3x      { margin-bottom: ($spacing-base * 3); }
 .mb--4x      { margin-bottom: ($spacing-base * 4); }
 
 .mr          { margin-right: $spacing-base; }
+.mr--quarter { margin-right: ($spacing-base / 4); }
 .mr--half    { margin-right: ($spacing-base / 2); }
 .mr--double  { margin-right: ($spacing-base * 2); }
 
@@ -64,4 +67,10 @@ hr {
   content: "";
   display: table;
   clear: both;
+}
+
+// display
+
+.d-block {
+  display: block;
 }

@@ -14,8 +14,8 @@ Within the product team at <a href="https://carbondmp.com" target="_blank">Carbo
 
 Although the insights we gain from speaking with our customers are instrumental in the progression of our offering, we introduced the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">System Usability Scale (SUS)</a> as a measure to give us a high level benchmark when monitoring the satisfaction people experience whilst using our product. This takes the form of a multiple choice 10 question survey that prompts people to score the usability of Carbon, resulting in a single metric. Since doing so we’ve noticed a significant shift in two key areas:
 
-- Our customers feel more valued
-- The wider team understand product reception
+1. Our customers feel more valued
+2. The wider team understand product reception
 
 ### Increased user engagement
 

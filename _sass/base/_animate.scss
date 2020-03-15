@@ -1,0 +1,43 @@
+.text-link {
+	position: relative;
+	padding-right: 32px;
+	font-size: 1.15rem;
+
+	&:after {
+		content: "";
+		background: url('/images/icons/icon-arrow-right.svg') no-repeat;
+		background-size: 18px;
+		position: absolute;
+		top: 5px;
+		right: 0;
+		width: 20px;
+		height: 20px;
+		transition: right .5s;
+	}
+
+	&:hover {
+
+		&:after {
+			right: -6px;
+			transition: right .5s;
+		}
+	}
+
+	&--external {
+		@extend .text-link;
+		
+		&:after {
+			content: "";
+			background: url('/images/icons/icon-arrow-up-right.svg') no-repeat;
+			background-size: 11px;
+			position: absolute;
+			top: 7px;
+			right: 0;
+			width: 20px;
+			height: 20px;
+			transition: right .5s;
+		}
+
+	}
+
+}

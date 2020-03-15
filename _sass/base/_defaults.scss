@@ -19,8 +19,10 @@ src: url("/fonts/hkgrotesk-semibold.eot"),
 	 url("/fonts/hkgrotesk-semibold.otf") format("opentype");
 }
 
-$font-family-alpha: "hk-grotesk-regular", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
-$font-family-bravo: "hk-grotesk-semi-bold", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
+$font-family-alpha: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+// $font-family-alpha: "hk-grotesk-regular", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
+$font-family-bravo: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+// $font-family-bravo: "hk-grotesk-semi-bold", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
 $font-family-charlie: "freight-text-pro", Georgia, serif;
 $font-size-base:   17px;
 $line-height-base: 32px;
@@ -33,5 +35,6 @@ body {
   padding: ($spacing-base * 2) 0;
   margin: 0;
   font-family: $font-family-alpha;
-  color: #444444;
+  // color: #444444;
+  color: #2f3747;
 }

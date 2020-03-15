@@ -17,6 +17,7 @@ Here's a short roundup of the stand out podcasts I’ve been listening to over t
 Each episode is a deep dive into the Silicon Valley tech scene with some of the industry’s veterans. Particularly insightful for those of us across the pond.
 
 [Listen to Design Details](http://spec.fm/podcasts/design-details)
+<!-- <a href="http://spec.fm/podcasts/design-details" target="_blank" class="text-link--external">Listen to Design Details</a> -->
 
 
 ### Reply All
