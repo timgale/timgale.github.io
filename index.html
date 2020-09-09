@@ -29,12 +29,12 @@ layout: default
 
 							{% if project.status contains 'wip' %}
 								<div class="work__item--image mb--half status-wip">
-										<img src="{{ project.image }}" />
+										<img loading="lazy" src="{{ project.image }}" />
 								</div>
 							{% else %}
 								<a href="{{ project.url }}" class="work__item--image-link">
 									<div class="work__item--image mb--half">
-											<img src="{{ project.image }}" />
+											<img loading="lazy" src="{{ project.image }}" />
 									</div>
 								</a>
 							{% endif %}
@@ -99,7 +99,7 @@ layout: default
 					          		</div>
 					          		<div class="blog__post--image grid-item">
 					          			<a href="{{ post.url }}">
-					        				<img src="{{ post.image_small }}" />
+					        				<img loading="lazy" src="{{ post.image_small }}" />
 				        				</a>
 					        		</div>
 
@@ -122,7 +122,7 @@ layout: default
 				<div class="grid-item project__item">
 					<div class="project__item--image fl mr">
 						<a href="https://creativemarket.com/timgale/3003493-iPhone-XS-and-XR-Device-Mockups">
-							<img src="images/project-item-device-templates.png" />
+							<img loading="lazy" src="images/project-item-device-templates.png" />
 						</a>
 					</div>
 					<div class="project__item--description">
@@ -135,7 +135,7 @@ layout: default
 				<div class="grid-item project__item">
 					<div class="project__item--image fl mr">
 						<a href="https://instagram.com/retrolaced">
-							<img src="images/project-item-retrolaced.jpg" />
+							<img loading="lazy" src="images/project-item-retrolaced.jpg" />
 						</a>
 					</div>
 					<div class="project__item--description">
@@ -158,7 +158,7 @@ layout: default
 						<h4 class="mb--half">The Best Interface Is No Interface: <br />The Simple Path to Brilliant Technology</h4>
 						<span>Golden Krishna</span>
 					</div>
-					<img class="reading__book-image fr" src="/images/book-cover_the_best_interface_is_no_interface.jpg" alt="The Best Interface Is No Interface Book Cover" title="The Best Interface Is No Interface Book Cover" />
+					<img loading="lazy" class="reading__book-image fr" src="/images/book-cover_the_best_interface_is_no_interface.jpg" alt="The Best Interface Is No Interface Book Cover" title="The Best Interface Is No Interface Book Cover" />
 			</div>
 		<!-- </div> -->
 		<!-- /Currently Reading -->
