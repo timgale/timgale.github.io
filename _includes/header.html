@@ -3,38 +3,35 @@
 
   <header class="site-header">
 
-    <div class="mb--double">
+    <div>
 
-      <div class="container--alpha">
+      <div class="masthead container--alpha">
   	
-  		<div class="fl">
+  		<div class="masthead-content">
 
+        <!-- name -->
+        <div class="masthead__name">
   	    	<a class="site-title" href="{{ site.baseurl }}/">
-            <img width="76" class="mr--half avatar" src="/images/avatar_2023.jpg" />
-            <div class="fr">
-              <h1 class="mb--quarter">Tim Gale</h1>
-              <h2>Product Designer</h2>
+            <div class="">
+              <h1>Tim Gale</h1>
             </div>
   	    	</a>
-
-        	</div>
+        </div>
+        <!-- /name -->
 
         <!-- nav -->
-        <ul class="fr list--nav">
-          <li class="list--nav__item mr">
-            <a href="/">Home</a>
-          </li>
-        	<li class="list--nav__item mr">
-        		<a href="/blog">Blog</a>
-        	</li>
-          <!-- <li class="list--nav__item mr">
-            <a href="/speaking">Speaking</a>
-          </li> -->
-        	<!-- <li class="list--nav__item">
-        		<a href="/projects">Projects</a>
-        	</li> -->
-        </ul>
+        <div class="masthead__nav">
+          <ul class="list--nav">
+            {% for item in site.data.menu %}
+            <li class="list--nav__item">
+              <a class="{% if page.url == item.link or page.url contains item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a>        
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
         <!-- /nav -->
+
+      </div>
 
       </div>
 

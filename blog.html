@@ -7,27 +7,68 @@ summary: Blog posts - Tim Gale, Product Designer
 <div class="mb--double">
 	<div class="container--alpha">
 
-		<!-- posts -->
-		<div class="pb mb--double">
+		<div class="single-content">
 
-			<h2 class="mb--double">Blog</h2>
-
-			    <ul class="list--posts mb">
-			      {% for post in site.posts %}
-			      	{% if post.tags contains 'posts' %}
-				        <li class="list--posts__item">
-				        	<a href="{{ post.url }}">
-								<h3 class="heading--echo">
-						        	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-						        </h3>
-					          		<span class="sub-text">{{ post.date | date: "%b %-d, %Y" }}</span>
-				        </li>
-			        {% endif %}
-			      {% endfor %}
-			    </ul>
+			<!-- Blog Posts -->
+			<div class="col-layout single-page">
+				<div class="col-layout-content">
+					<div class="col-layout__intro">
+						<h2 class="heading--bravo">Blog</h2>
+					</div>
+					<div class="col-layout__main">
+						<ul class="col-layout__main__list">
+							{% for post in site.posts limit:3 %}
+								{% if post.tags contains 'posts' %}
+									<li>
+										<a href="{{ post.url }}" class="link-wrap">
+											<div class="content">
+												<h3 class="heading--charlie">{{ post.title }}</h3>
+												<p>{{ post.summary }}</p>
+											</div>
+											<span class="link internal">View</span>
+										</a>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Blog Posts -->
 
 		</div>
-		<!-- /posts -->
 
 	</div>
 </div>
+
+<!-- Lower Third -->
+<div class="lower-third">
+	<div class="lower-third__content">
+		<!-- Social Proof -->
+		<div class="client-quotes">
+			<div class="client-quotes__content">
+				<div class="quote--bravo">
+					<span class="quote-logo client-1">Papertrail</span>
+					<p>“The quality of Tim's work and his communication with us has always been great, and we have never hesitated to get him involved in a project.”</p>
+					<span>– Rob Walker, Papertrail.io</span>
+				</div>
+				<div class="quote--bravo">
+					<span class="quote-logo client-2">Paid</span>
+					<p>“Tim ran UX for Paid, and is great at working with clients, running workshops and communicating his ideas to the team. His UX is always on point.</p>
+					<span>– Tom Howsam, Paid</span>
+				</div>
+			</div>
+		</div>
+		<!-- /Social Proof -->
+		<!-- Free Download -->
+		<div class="download-cta">
+			<h3 class="heading--charlie">Learn how to land your dream design job</h3>
+				<p>Take control of your future and set yourself up for landing that product design job you've been looking for.</p>
+				<form action="#">
+
+				</form>
+		</div>
+		<!-- /Free Download -->
+	</div>
+</div>
+<!-- /Lower Third -->

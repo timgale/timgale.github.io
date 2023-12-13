@@ -16,7 +16,8 @@ hr {
   border: 0;
   height: 1px;
   background: #E5E5E5;
-  margin: ($spacing-base * 2) 0;
+  // margin: ($spacing-base * 2) 0;
+  margin: 1px;
 }
 
 // floats
@@ -73,4 +74,18 @@ hr {
 
 .d-block {
   display: block;
+}
+
+// Flexbox
+
+.flex {
+  display: flex;
+  gap: 76px;
+}
+
+.flex--row {
+
+  @extend .flex;
+  flex-direction: column;
+  gap: 20px;
 }

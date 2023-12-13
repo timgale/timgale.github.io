@@ -2,50 +2,127 @@
 layout: default
 ---
 
-<div class="mb--double">
+<div>
 	<div class="container--bravo">
-    <div class="pb--double mb--double">
+    <div>
 
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="single-content">
 
-        <header class="mb--double">
-          <h2 class="heading--bravo mb--quarter text-center project-title" itemprop="name headline">{{ page.title }}</h2>
-        </header>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a class="previous" href="/work">Work</a>
+          <span class="divider">/</span>
+          <span class="current">{{ page.title }}</span></span>
+        </div>
+        <!-- /Breadcrumb -->
 
-        <div class="project-content mb--double" itemprop="articleBody">
-          {{ content }}
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="mb--double">
+            <h2 class="heading--alpha narrow" itemprop="name headline">{{ page.intro }}</h2>
+          </header>
+
+          <div class="project-content mb--double" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+        </article>
+
+        <div class="row-layout">
+          <div class="row-layout-content">
+            <div class="row-layout__intro">
+              <h2 class="heading--bravo">More Work</h2>
+            </div>
+            <div class="row-layout__main">
+              <ul class="row-layout__main__list">
+                {% for work_item in site.work_items limit:2 %}
+                  <li>
+                    <a href="{{ work_item.permalink }}" class="link-wrap">
+                      <div class="work-preview-image">
+                        <img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+                        <img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+                        <span class="link internal">View</span>
+                      </div>
+                      <div class="content">
+                        <h3 class="heading--charlie">{{ work_item.title }}</h3>
+                        <p class="description">{{ work_item.summary }}</p>
+                      </div>
+                    </a>
+                  </li>
+                    {% endfor %}
+              </ul>
+            </div>
+          </div>
         </div>
 
-      </article>
-
-      <!-- pagination -->
-      <div class="pagination mb--double">
-        <div class="pagination__item--prev fl-m">
-          {% if page.previous != 'nil' %}
-            {% if page.title == 'Howdee' %}
-            {% else %}
-            <a href="{{ page.previous.url }}">
-              <span class="text mb--quarter">&#8592; Previous Project</span>
-              <span class="sub-text">{{ page.previous.title }}</span>
-            </a>
-            {% endif %}
-          {% endif %}
-        
-        </div>
-        <div class="pagination__item--next fr-m">
-            {% if page.next != 'nil' %}
-              {% if page.title == 'Carbon' %}
+        <!-- pagination -->
+        <!-- <div class="pagination mb--double">
+          <div class="pagination__item--prev fl-m">
+            {% if page.previous != 'nil' %}
+              {% if page.title == 'Howdee' %}
               {% else %}
-                <a href="{{ page.next.url }}">
-                  <span class="text mb--quarter">Next Project &#8594;</span>
-                  <span class="sub-text">{{ page.next.title }}</span>
-                </a>
+              <a href="{{ page.previous.url }}">
+                <span class="text mb--quarter">&#8592; Previous Project</span>
+                <span class="sub-text">{{ page.previous.title }}</span>
+                <div class="work-preview-image">
+                  <img class="default" src="{{ page.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+                  <img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+                  <span class="link internal">View</span>
+                </div>
+              </a>
               {% endif %}
             {% endif %}
-        </div>
+          
+          </div>
+          <div class="pagination__item--next fr-m">
+              {% if page.next != 'nil' %}
+                {% if page.title == 'Carbon' %}
+                {% else %}
+                  <a href="{{ page.next.url }}">
+                    <span class="text mb--quarter">Next Project &#8594;</span>
+                    <span class="sub-text">{{ page.next.title }}</span>
+                    img
+                  </a>
+                {% endif %}
+              {% endif %}
+          </div>
+        </div> -->
+        <!-- /pagination -->
+
       </div>
-      <!-- /pagination -->
 
     </div>
   </div>
 </div>
+
+<!-- Lower Third -->
+<div class="lower-third">
+  <div class="lower-third__content">
+    <!-- Social Proof -->
+    <div class="client-quotes">
+      <div class="client-quotes__content">
+        <div class="quote--bravo">
+          <span class="quote-logo client-1">Papertrail</span>
+          <p>“The quality of Tim's work and his communication with us has always been great, and we have never hesitated to get him involved in a project.”</p>
+          <span>– Rob Walker, Co-founder at Papertrail.io</span>
+        </div>
+        <div class="quote--bravo">
+          <span class="quote-logo client-2">Paid</span>
+          <p>“Tim ran UX for Paid, and is great at working with clients, running workshops and communicating his ideas to the team. His UX is always on point.</p>
+          <span>– Tom Howsam, Founder at Paid</span>
+        </div>
+      </div>
+    </div>
+    <!-- /Social Proof -->
+    <!-- Free Download -->
+    <!-- <div class="download-cta">
+      <h3 class="heading--charlie">Learn how to land your dream design job</h3>
+        <p>Take control of your future and set yourself up for landing that product design job you've been looking for.</p>
+        <form action="#">
+
+        </form>
+    </div> -->
+    <!-- /Free Download -->
+  </div>
+</div>
+<!-- /Lower Third -->

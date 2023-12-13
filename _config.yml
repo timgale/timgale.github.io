@@ -26,7 +26,8 @@ menuitems:
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title
+# permalink: /:year/:month/:day/:title
+permalink: /blog/:title
 
 # Sass settings
 sass:
@@ -34,6 +35,6 @@ sass:
 
 # Collection settings
 collections:
-    projects:
+    work_items:
       output: true
-      permalink: /:collection/:title
+      permalink: /work/:title

@@ -1,16 +1,25 @@
-	<div class="container--alpha">
-		
-		<div class="fl">
-			<span class="sub-text">This site is powered by Jekyll, hosted on <a href="http://github.com/timgale/timgale.github.io">Github</a> &amp; deployed with Netlify.</span>
+	<div class="footer">
+		<div class="footer-content">
+			<div class="footer__name">
+				<span>© Tim Gale Limited</span>
+			</div>
+			<div>
+				<!-- nav -->
+				<div>
+					<ul class="list--nav--footer">
+						<li class="list--nav--footer__item"><a href="https://youtube.com/@thetimgale">YouTube</a></li>
+						<li class="list--nav--footer__item"><a href="https://instagram.com/uiplug">Instagram</a></li>
+					{% for item in site.data.menu %}
+					<li class="list--nav--footer__item">
+						<a class="" href="{{item.link}}">{{item.title}}</a>
+						
+					</li>
+					{% endfor %}
+					</ul>
+				</div>
+				<!-- /nav -->
+			</div>
 		</div>
-
-		<div class="fr">
-			<span class="sub-text">
-				<a class="mr" href="https://timgale.me/tim_gale_cv.pdf" target="_blank">Download CV</a>
-				<a href="mailto:tim@timgale.me">tim@timgale.me</a>
-			</span>
-		</div>
-
 	</div>
 
 </div>

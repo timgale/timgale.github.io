@@ -14,7 +14,60 @@
   .list--nav__item {
     list-style-type: none;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    @extend .mr;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    a {
+      position: relative;
+      display: inline-block;
+      color: #4A5568;
+      border-bottom: none;
+      padding-bottom: 20px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #EBEBEB;
+      }
+  
+      &:hover {
+        border-bottom: none;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #999999;
+        }
+  
+      }
+  
+      &.active {
+  
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #999999;
+        }
+  
+      }
+
+    }
 
     &.is-active {
       padding-bottom: 5px;

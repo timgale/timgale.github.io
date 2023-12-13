@@ -2,194 +2,302 @@
 layout: default
 ---
 
-<div class="mb--double">
+<div>
 	<div class="container--alpha">
 
 		<!-- About -->
-		<div class="pb mb--3x">
-
-			<!-- <p>Hi, I'm Tim, a Product Designer and Head of UX at <a href="https://carbondmp.com">Carbon</a>.</p>
-			<p>Follow me on <a href="http://twitter.com/timgale">Twitter</a>, connect with me on <a href="http://uk.linkedin.com/pub/tim-gale/13/258/58a/">LinkedIn</a> or see what I'm listening to on <a href="http://last.fm/user/timgale">Last.fm</a>.</p> -->
-
-			<p class="site-intro">Creating digital products with user centred design practices. <br />
-			User research, interaction, and visual design.</p>
-
+		<div class="hero">
+			<div class="hero__content">
+				<div class="hero__content__intro">
+					<div class="bio">
+						<h2 class="heading--alpha">Digital product designer, coach, and content creator.</h2>
+							<p>A visual designer at my core, I help companies with their user experience needs, coach aspiring creatives, and make content to help you level up your design career.</p>
+					</div>
+						<hr>
+					<div class="social-proof">
+						<h3 class="heading--charlie">Trusted by many companies and individuals</h3>
+							<div class="quote--alpha">
+								<p>“As someone new to UI and UX design, Tim clarified my confusion, explaining the concepts in a detailed and simple manner. His guidance has significantly enhanced my understanding of design principles!”</p>
+								<span>– Muhammad Zubair, Coaching client</span>
+							</div>
+					</div>
+				</div>
+				<img class="hero-image" src="images/hero-image.png" alt="Tim speaking at an event">
+			</div>
+			<div class="logos">
+				<ul>
+					<li class="client-1">Sky</li>
+					<li class="client-2">Gov.uk</li>
+					<li class="client-3">SLC</li>
+					<li class="client-4">Paid</li>
+					<li class="client-5">UK Retreats</li>
+				</ul>
+			</div>	
 		</div>
 		<!-- /About -->
 
-		<!-- Selected Work -->
-		<div id="selected-work" class="mb--double">
-			<h1 class="mb--3x section-heading section-heading-1">Selected Work</h1>
-
-			<div class="grid-container">
-				{% for project in site.projects reversed limit:4 %}
-					{% if project.tags contains 'projects' %}
-						
-						<div class="grid-item work__item mb--double">
-
-							{% if project.status contains 'wip' %}
-								<div class="work__item--image mb--half status-wip">
-										<img loading="lazy" src="{{ project.image }}" />
+		<!-- Content Creation -->
+		<div class="col-layout">
+			<div class="col-layout-content">
+				<div class="col-layout__intro">
+					<h2 class="heading--bravo">Content Creation</h2>
+				</div>
+				<div class="col-layout__main">
+					<ul class="col-layout__main__list">
+						<li>
+							<a class="link-wrap" href="https://youtube.com/@thetimgale">
+								<div class="content">
+									<h3 class="heading--charlie">YouTube</h3>
+								<p>Videos about my experience in UX and UI Design</p>
 								</div>
-							{% else %}
-								<a href="{{ project.url }}" class="work__item--image-link">
-									<div class="work__item--image mb--half">
-											<img loading="lazy" src="{{ project.image }}" />
+								<span class="link external">View</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/uiplug" class="link-wrap">
+								<div class="content">
+									<h3 class="heading--charlie">Instagram</h3>
+									<p>Regular snippets of product design tips and tricks</p>
+								</div>
+								<span class="link external">View</span>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="/" class="link-wrap">
+								<div class="content">
+									<h3 class="heading--charlie">Newsletter</h3>
+									<p>Design deep dives from my 10+ years in the industry</p>
+								</div>
+								<span class="link internal">View</span>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Content Creation -->
+
+		<!-- Work -->
+		<div class="row-layout">
+			<div class="row-layout-content">
+				<div class="row-layout__intro">
+					<h2 class="heading--bravo">Work</h2>
+				</div>
+				<div class="row-layout__main">
+					<ul class="row-layout__main__list">
+						{% for work_item in site.work_items limit:3 %}
+							<li>
+								<a href="{{ work_item.permalink }}" class="link-wrap">
+									<div class="work-preview-image">
+										<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+										<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+										<span class="link internal">View</span>
+									</div>
+									<div class="content">
+										<h3 class="heading--charlie">{{ work_item.title }}</h3>
+										<p class="description">{{ work_item.summary }}</p>
 									</div>
 								</a>
+							</li>
+			      		{% endfor %}
+						<!-- <li>
+							<a href="https://uiplug.lemonsqueezy.com" class="link-wrap">
+								<div class="work-preview-image">
+									<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+									<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+									<span class="link external">View</span>
+								</div>
+								<div class="content">
+									<h3 class="heading--charlie">Framer Website Templates</h3>
+									<p class="description">High quality Framer templates to help your digital startup</p>
+								</div>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Work -->
+
+		<!-- Blog Posts -->
+		<div class="col-layout">
+			<div class="col-layout-content">
+				<div class="col-layout__intro">
+					<h2 class="heading--bravo">Blog</h2>
+				</div>
+				<div class="col-layout__main">
+					<ul class="col-layout__main__list">
+						{% for post in site.posts limit:3 %}
+			      			{% if post.tags contains 'posts' %}
+								<li>
+									<a href="{{ post.url }}" class="link-wrap">
+										<div class="content">
+											<h3 class="heading--charlie">{{ post.title }}</h3>
+											<p>{{ post.summary }}</p>
+										</div>
+										<span class="link internal">View</span>
+									</a>
+								</li>
 							{% endif %}
-							
-							<div class="work__item--description">
-								<h2 class="mb--half">{{ project.title }}</h2>
-									<p class="mb--half">{{ project.tasks }}</p>
-									{% unless project.status contains 'wip' %}
-										<a href="{{ project.url }}" class="text-link">View Case Study</a>
-									{% endunless %}
-							</div>
+			      		{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Blog Posts -->
 
+		<!-- Lower Third -->
+		<div class="lower-third">
+			<div class="lower-third__content">
+				<!-- Social Proof -->
+				<div class="client-quotes">
+					<div class="client-quotes__content">
+						<div class="quote--bravo">
+							<span class="quote-logo client-1">Papertrail</span>
+							<p>“The quality of Tim's work and his communication with us has always been great, and we have never hesitated to get him involved in a project.”</p>
+							<span>– Rob Walker, Co-founder at Papertrail.io</span>
 						</div>
+						<div class="quote--bravo">
+							<span class="quote-logo client-2">Paid</span>
+							<p>“Tim ran UX for Paid, and is great at working with clients, running workshops and communicating his ideas to the team. His UX is always on point.</p>
+							<span>– Tom Howsam, Founder at Paid</span>
+						</div>
+					</div>
+				</div>
+				<!-- /Social Proof -->
+				<!-- Free Download -->
+				<!-- <div class="download-cta">
+					<h3 class="heading--charlie">Learn how to land your dream design job</h3>
+						<p>Take control of your future and set yourself up for landing that product design job you've been looking for.</p>
+						<div class="newsletter-form-container"><form class="newsletter-form" action="https://app.loops.so/api/newsletter-form/clmenjr390103l70orvdx5x85" method="POST" style="display: flex; flex-direction: row; align-items: center; width: 100%;"><input class="newsletter-form-input" name="newsletter-form-input" type="email" placeholder="Enter your email" required="" style="font-family: Inter, sans-serif; color: rgb(74, 85, 104); font-size: 1rem; margin: 0px 10px 0px 0px; width: 100%; max-width: 300px; min-width: 100px; background: rgb(255, 255, 255); border: 1px solid rgb(209, 213, 219); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; padding: 12px 20px;"><button type="submit" class="newsletter-form-button" style="background: rgb(13, 148, 136); font-size: 1rem; color: rgb(255, 255, 255); font-family: Inter, sans-serif; display: flex; width: min-content; max-width: 300px; white-space: nowrap; align-items: center; justify-content: center; flex-direction: row; padding: 12px 20px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; text-align: center; font-style: normal; font-weight: 500; line-height: 20px; border: none; cursor: pointer;">Get Your Free Guide</button><button type="button" class="newsletter-loading-button" style="background: rgb(13, 148, 136); font-size: 14px; color: rgb(255, 255, 255); font-family: Inter, sans-serif; display: none; width: min-content; max-width: 300px; white-space: nowrap; height: 38px; align-items: center; justify-content: center; flex-direction: row; padding: 9px 17px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; text-align: center; font-style: normal; font-weight: 500; line-height: 20px; border: none; cursor: pointer;">Please wait...</button></form><div class="newsletter-success" style="display: none; align-items: center; justify-content: center; width: 100%;"><p class="newsletter-success-message" style="font-family: Inter, sans-serif; color: rgb(0, 0, 0); font-size: 14px;">Thanks! We'll be in touch!</p></div><div class="newsletter-error" style="display: none; align-items: center; justify-content: center; width: 100%;"><p class="newsletter-error-message" style="font-family: Inter, sans-serif; color: rgb(185, 28, 28); font-size: 14px;">Oops! Something went wrong, please try again</p></div>
+						<button 
+						class='newsletter-back-button'
+						type='button' 
+						style='color:#6b7280;font: 14px, Inter, sans-serif;margin:10px auto;text-align:center;display:none;background:transparent;border:none;cursor:pointer'
+						onmouseout='this.style.textDecoration="none"' 
+						onmouseover='this.style.textDecoration="underline"'>
+						&larr; Back
+						</button>
+						</div><script>
+						function submitHandler(event) {
+						event.preventDefault();
+						var container = event.target.parentNode;
+						var form = container.querySelector(".newsletter-form");
+						var formInput = container.querySelector(".newsletter-form-input");
+						var success = container.querySelector(".newsletter-success");
+						var errorContainer = container.querySelector(".newsletter-error");
+						var errorMessage = container.querySelector(".newsletter-error-message");
+						var backButton = container.querySelector(".newsletter-back-button");
+						var submitButton = container.querySelector(".newsletter-form-button");
+						var loadingButton = container.querySelector(".newsletter-loading-button");
 
-					{% endif %}
-				{% endfor %}
+						const rateLimit = () => {
+							errorContainer.style.display = "flex";
+							errorMessage.innerText = "Too many signups, please try again in a little while";
+							submitButton.style.display = "none";
+							formInput.style.display = "none";
+							backButton.style.display = "block";
+						}
 
+						// Compare current time with time of previous sign up
+						var time = new Date();
+						var timestamp = time.valueOf();
+						var previousTimestamp = localStorage.getItem("loops-form-timestamp");
+
+						// If last sign up was less than a minute ago
+						// display error
+						if (previousTimestamp && Number(previousTimestamp) + 60000 > timestamp) {
+							rateLimit();
+							return;
+						}
+						localStorage.setItem("loops-form-timestamp", timestamp);
+
+						submitButton.style.display = "none";
+						loadingButton.style.display = "flex";
+
+						var formBody = "userGroup=&email=" + encodeURIComponent(formInput.value);
+						fetch(event.target.action, {
+							method: "POST",
+							body: formBody,
+							headers: {
+							"Content-Type": "application/x-www-form-urlencoded",
+							},
+						})
+							.then((res) => [res.ok, res.json(), res])
+							.then(([ok, dataPromise, res]) => {
+							if (ok) {
+								// If response successful
+								// display success
+								success.style.display = "flex";
+								form.reset();
+							} else {
+								// If response unsuccessful
+								// display error message or response status
+								dataPromise.then(data => {
+								errorContainer.style.display = "flex";
+								errorMessage.innerText = data.message
+									? data.message
+									: res.statusText;
+								});
+							}
+							})
+							.catch(error => {
+							// check for cloudflare error
+							if (error.message === "Failed to fetch") {
+								rateLimit();
+								return;
+							}
+							// If error caught
+							// display error message if available
+							errorContainer.style.display = "flex";
+							if (error.message) errorMessage.innerText = error.message;
+							localStorage.setItem("loops-form-timestamp", '');
+							})
+							.finally(() => {
+							formInput.style.display = "none";
+							loadingButton.style.display = "none";
+							backButton.style.display = "block";
+							});
+						}
+						function resetFormHandler(event) {
+						var container = event.target.parentNode;
+						var formInput = container.querySelector(".newsletter-form-input");
+						var success = container.querySelector(".newsletter-success");
+						var errorContainer = container.querySelector(".newsletter-error");
+						var errorMessage = container.querySelector(".newsletter-error-message");
+						var backButton = container.querySelector(".newsletter-back-button");
+						var submitButton = container.querySelector(".newsletter-form-button");
+
+						success.style.display = "none";
+						errorContainer.style.display = "none";
+						errorMessage.innerText = "Oops! Something went wrong, please try again";
+						backButton.style.display = "none";
+						formInput.style.display = "flex";
+						submitButton.style.display = "flex";
+						}
+
+						var formContainers = document.getElementsByClassName(
+						"newsletter-form-container"
+						);
+
+						for (var i = 0; i < formContainers.length; i++) {
+						var formContainer = formContainers[i]
+						var handlersAdded = formContainer.classList.contains('newsletter-handlers-added')
+						if (handlersAdded) continue;
+						formContainer
+							.querySelector(".newsletter-form")
+							.addEventListener("submit", submitHandler);
+						formContainer
+							.querySelector(".newsletter-back-button")
+							.addEventListener("click", resetFormHandler);
+						formContainer.classList.add("newsletter-handlers-added");
+						}
+						</script>
+				</div> -->
+				<!-- /Free Download -->
 			</div>
-
 		</div>
-		<!-- /Selected Work -->
-
-		<!-- Quote -->
-			<div class="container--highlight text-center mb--4x">
-				<p>“The quality of Tim's work and his communication with us has always been great,<br />
-	and we have never hesitated to get him involved in a project.”</p>
-				<div class="mb--half">
-					<span class="d-block mb--quarter text-heavy text-body">Rob Walker</span>
-					<span class="d-block text-body">Papertrail.io</span>
-				</div>
-			</div>
-		<!-- /Quote -->
-
-		<!-- Latest Blog Posts -->
-		<div class="latest-blog-post pb mb--4x">
-
-			<div class="grid-container--section-heading">
-
-				<div class="grid-item">
-					<h1 class="mb--3x section-heading section-heading-2">Latest From The Blog</h1>
-				</div>
-
-				<div class="grid-item text-right section-heading__link">
-					<a href="/blog">View all Posts</a>
-				</div>
-
-			</div>
-
-			    <ul class="list--posts">
-			      {% for post in site.posts limit:1 %}
-			      	{% if post.tags contains 'posts' %}
-				        <li class="list--posts__item">
-
-				        		<div class="grid-container--latest-blog-post">
-
-					        		<div class="blog__post--meta grid-item">
-					        			<a href="{{ post.url | prepend: site.baseurl }}">
-											<h2 class="heading--echo">{{ post.title }}</h2>
-										</a>
-							          		<span class="sub-text d-block">{{ post.date | date: "%b %-d, %Y" }}</span>
-							          		<a href="{{ post.url }}" class="text-link">Read More</a>
-					          		</div>
-					          		<div class="blog__post--image grid-item">
-					          			<a href="{{ post.url }}">
-					        				<img loading="lazy" src="{{ post.image_small }}" />
-				        				</a>
-					        		</div>
-
-					        	</div>
-
-				        </li>
-			        {% endif %}
-			      {% endfor %}
-			    </ul>
-
-		</div>
-		<!-- /Latest Blog Posts -->
-
-		<!-- Personal Projects -->
-		<div>
-			<h1 class="mb--3x section-heading section-heading-3">Personal Projects</h1>
-
-			<div class="grid-container">
-
-				<div class="grid-item project__item">
-					<div class="project__item--image fl mr">
-						<a href="https://creativemarket.com/timgale/3003493-iPhone-XS-and-XR-Device-Mockups">
-							<img loading="lazy" src="images/project-item-device-templates.png" />
-						</a>
-					</div>
-					<div class="project__item--description">
-						<h2 class="mb--half">Device Templates</h2>
-							<p class="mb--half">Free and premium templates to help others get going.</p>
-							<a href="https://creativemarket.com/timgale/3003493-iPhone-XS-and-XR-Device-Mockups" target="_blank" class="text-link--external">View on Creative Market</a>
-					</div>
-				</div>
-
-				<div class="grid-item project__item">
-					<div class="project__item--image fl mr">
-						<a href="https://instagram.com/retrolaced">
-							<img loading="lazy" src="images/project-item-retrolaced.jpg" />
-						</a>
-					</div>
-					<div class="project__item--description">
-						<h2 class="mb--half">Retrolaced</h2>
-							<p class="mb--half">Gallery dedicated to my sneaker <span class="strikethrough">obsession</span> collection.</p>
-							<a href="https://instagram.com/retrolaced" target="_blank" class="text-link--external">View on Instagram</a>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- /Personal Projects -->
-
-		<!-- Currently Reading -->
-		<!-- <div class="container--alpha"> -->
-			<div class="reading mb--double">
-				<h3><span class="mr--quarter">📖</span> Currently Reading</h3>
-					<div class="reading__book-details">
-						<h4 class="mb--half">The Best Interface Is No Interface: <br />The Simple Path to Brilliant Technology</h4>
-						<span>Golden Krishna</span>
-					</div>
-					<img loading="lazy" class="reading__book-image fr" src="/images/book-cover_the_best_interface_is_no_interface.jpg" alt="The Best Interface Is No Interface Book Cover" title="The Best Interface Is No Interface Book Cover" />
-			</div>
-		<!-- </div> -->
-		<!-- /Currently Reading -->
-
-		<!-- Social -->
-		<ul class="social-links">
-			<li class="social-link social-links__twitter">
-				<a href="https://twitter.com/timgale" target="_blank">
-					<svg height="25" viewBox="0 0 124 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M38.7028 100C85.1441 100 110.546 61.5237 110.546 28.1572C110.546 27.0644 110.546 25.9764 110.472 24.8934C115.413 21.3191 119.679 16.8933 123.069 11.8235C118.461 13.8655 113.572 15.2046 108.567 15.7962C113.838 12.6406 117.783 7.6774 119.667 1.83028C114.711 4.77141 109.288 6.84418 103.634 7.95912C99.827 3.91106 94.792 1.23053 89.3081 0.332352C83.8242 -0.565831 78.1972 0.368402 73.2977 2.99048C68.3983 5.61256 64.4996 9.77631 62.205 14.8374C59.9103 19.8985 59.3477 25.5747 60.6041 30.9878C50.5654 30.4845 40.7447 27.8758 31.7796 23.3309C22.8145 18.786 14.9053 12.4066 8.56561 4.60672C5.33673 10.1653 4.34779 16.7456 5.80014 23.0077C7.25249 29.2698 11.0369 34.743 16.383 38.3129C12.3647 38.1938 8.43407 37.1098 4.92276 35.1525C4.92276 35.2558 4.92276 35.3641 4.92276 35.4724C4.92436 41.3021 6.94238 46.9517 10.6346 51.463C14.3267 55.9744 19.4657 59.0697 25.1799 60.2241C21.4626 61.2379 17.5623 61.3861 13.7788 60.6573C15.3923 65.6744 18.5335 70.0618 22.7632 73.2058C26.9929 76.3498 32.0994 78.0932 37.3687 78.1922C28.4276 85.2191 17.3826 89.0337 6.01069 89.0222C4.00173 89.0184 1.99472 88.8967 0 88.658C11.547 96.0681 24.9826 99.9986 38.7028 99.9803" fill="#1DA1F2"/>
-</svg>
-				</a>
-			</li>
-			<li class="social-link social-links__dribbble">
-				<a href="https://dribbble.com/timgale" target="_blank">
-					<svg height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.397 0 0 22.397 0 50C0 77.603 22.397 100 50 100C77.5488 100 100 77.603 100 50C100 22.397 77.5488 0 50 0ZM83.026 23.0477C88.9913 30.3145 92.5705 39.5879 92.679 49.6204C91.269 49.3492 77.1692 46.4751 62.961 48.2646C62.6356 47.5597 62.3644 46.8004 62.0391 46.0412C61.1714 43.9805 60.1952 41.8655 59.2191 39.859C74.9458 33.4599 82.1041 24.2408 83.026 23.0477ZM50 7.37527C60.846 7.37527 70.7701 11.4425 78.308 18.1128C77.5488 19.1974 71.0954 27.82 55.9111 33.5141C48.9154 20.6616 41.1605 10.141 39.9675 8.5141C43.167 7.75488 46.5293 7.37527 50 7.37527ZM31.833 11.3883C32.9718 12.9067 40.564 23.4816 47.6681 36.0629C27.7115 41.3774 10.0868 41.269 8.18872 41.269C10.9544 28.0369 19.9024 17.0282 31.833 11.3883ZM7.26681 50.0542C7.26681 49.6204 7.26681 49.1866 7.26681 48.7527C9.11063 48.8069 29.8265 49.0781 51.1388 42.679C52.3861 45.0651 53.5249 47.5054 54.6095 49.9458C54.0672 50.1085 53.4707 50.2712 52.9284 50.4338C30.9111 57.538 19.1974 76.9523 18.2213 78.5792C11.4425 71.0412 7.26681 61.0087 7.26681 50.0542ZM50 92.7332C40.1302 92.7332 31.0195 89.3709 23.8069 83.731C24.5662 82.1584 33.243 65.4555 57.321 57.0499C57.4295 56.9957 57.4837 56.9957 57.5922 56.9414C63.6117 72.5054 66.0521 85.5748 66.7028 89.3167C61.551 91.5401 55.9111 92.7332 50 92.7332ZM73.807 85.4122C73.3731 82.8091 71.0955 70.3362 65.5098 54.9892C78.9046 52.8742 90.6182 56.3449 92.0824 56.833C90.2386 68.7093 83.4056 78.9588 73.807 85.4122Z" fill="#DA5988"/>
-</svg>
-
-				</a>
-			</li>
-			<li class="social-link social-links__linkedin">
-				<a href="https://www.linkedin.com/in/timjgale/" target="_blank">
-					<svg height="25" viewBox="0 0 100 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.1082 11.357C24.1082 17.539 19.4582 22.4946 11.9822 22.4946H11.8429C4.64552 22.499 0 17.5345 0 11.357C0 5.02667 4.79378 0.205936 12.1215 0.205936C19.4582 0.201443 23.9734 5.02667 24.1082 11.357ZM1.25797 95.7895H22.6975V31.3049H1.25797V95.7895ZM75.3167 29.7953C63.9456 29.7953 58.8552 36.0402 55.9934 40.4431V40.6498H55.8541C55.908 40.5869 55.9574 40.515 55.9934 40.4431V31.3094H34.5584C34.8369 37.3521 34.5584 95.794 34.5584 95.794H55.9934V59.78C55.9934 57.8391 56.1236 55.9387 56.6987 54.5504C58.2532 50.7136 61.7845 46.7016 67.688 46.7016C75.456 46.7016 78.5605 52.6275 78.5605 61.2896V95.794H99.9955V58.8231C100 39.001 89.415 29.7953 75.3167 29.7953Z" fill="#007AAA"/>
-</svg>
-
-				</a>
-			</li>
-		</ul>
-		<!-- /Social -->
-
+		<!-- /Lower Third -->
+		
 	</div>
 </div>
