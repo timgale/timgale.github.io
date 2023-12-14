@@ -936,6 +936,11 @@
 .single-content {
 	width: 100%;
 	padding: 140px 0 140px 0;
+
+	.row-layout {
+		padding-bottom: 0;
+	}
+
 }
 
 // Breadcrumb

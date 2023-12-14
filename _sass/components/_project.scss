@@ -14,6 +14,8 @@
 }
 
 .project-content {
+	display: flex;
+	flex-direction: column;
 
 	// Headings
 	h1 {
