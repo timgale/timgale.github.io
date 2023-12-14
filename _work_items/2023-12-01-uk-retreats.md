@@ -5,7 +5,7 @@ permalink: /work/uk-retreats/
 date: 2023-12-02
 categories: work_items
 tags: work_items
-image: /images/work-preview-ukretreats.png
+image: /images/ukretreats-case-study-preview.png
 image-animated: /images/work-preview-ukretreats.gif
 background-image: /images/work-item-placeholder.png
 background-size: 500px

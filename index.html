@@ -89,9 +89,11 @@ layout: default
 							<li>
 								<a href="{{ work_item.permalink }}" class="link-wrap">
 									<div class="work-preview-image">
-										<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-										<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-										<span class="link internal">View</span>
+										<div class="image-container">
+											<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+											<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+											<span class="link internal">View</span>
+										</div>
 									</div>
 									<div class="content">
 										<h3 class="heading--charlie">{{ work_item.title }}</h3>

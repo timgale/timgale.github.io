@@ -19,9 +19,11 @@ summary: Work - Tim Gale, Product Designer
 							<li>
 								<a href="{{ work_item.permalink }}" class="link-wrap">
 									<div class="work-preview-image">
-										<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-										<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-										<span class="link internal">View</span>
+										<div class="image-container">
+											<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+											<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+											<span class="link internal">View</span>
+										</div>
 									</div>
 									<div class="content">
 										<h3 class="heading--charlie">{{ work_item.title }}</h3>
@@ -30,7 +32,7 @@ summary: Work - Tim Gale, Product Designer
 								</a>
 							</li>
 			      		{% endfor %}
-						<li>
+						<!-- <li>
 							<a href="https://uiplug.lemonsqueezy.com" class="link-wrap">
 								<div class="work-preview-image">
 									<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
@@ -42,7 +44,7 @@ summary: Work - Tim Gale, Product Designer
 									<p class="description">High quality Framer templates to help your digital startup</p>
 								</div>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -72,13 +74,13 @@ summary: Work - Tim Gale, Product Designer
 		</div>
 		<!-- /Social Proof -->
 		<!-- Free Download -->
-		<div class="download-cta">
+		<!-- <div class="download-cta">
 			<h3 class="heading--charlie">Learn how to land your dream design job</h3>
 				<p>Take control of your future and set yourself up for landing that product design job you've been looking for.</p>
 				<form action="#">
 
 				</form>
-		</div>
+		</div> -->
 		<!-- /Free Download -->
 	</div>
 </div>

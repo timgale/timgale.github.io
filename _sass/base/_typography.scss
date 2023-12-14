@@ -167,6 +167,11 @@ ol, ul {
     line-height: 1.85em;
     // color: #666666;
     color: #4C5567;
+
+    @media (max-width: 700px) {
+      font-size: 1.2rem;
+    }
+
   }
 
 }

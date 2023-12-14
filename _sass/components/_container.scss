@@ -645,7 +645,7 @@
 					// justify-content: center;
 					// align-items: center;
 					width: 100%;
-					height: 360px;
+					// height: 360px;
 					border-radius: 8px;
 					background-color: #F5F5F5;
 					overflow: hidden;
@@ -658,13 +658,24 @@
 						opacity: 0;
 					}
 
+					.image-container {
+						margin: 0 auto;
+						padding: 2vw 2vw 0 2vw;
+						line-height: 0;
+
+						@media (max-width: 960px) {
+							padding: 6vw 6vw 0 6vw;
+						}
+					}
+
 					img {
-						position: absolute;
-						top: 20%;
-						left: 10%;
-						width: 80%;
-						border-radius: 6px;
-						box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.6875px #00000024, 0 2.414506143104518px 2.414506143104518px -1.375px #0002, 0 6.382653521484461px 6.382653521484461px -2.0625px #00000021, 0 20px 20px -2.75px #0000001d;
+						// position: absolute;
+						// top: 20%;
+						// left: 10%;
+						width: 100%;
+						border-radius: 6px 6px 0 0;
+						// box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.6875px #00000024, 0 2.414506143104518px 2.414506143104518px -1.375px #0002, 0 6.382653521484461px 6.382653521484461px -2.0625px #00000021, 0 20px 20px -2.75px #0000001d;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 6%);
 					}
 
 					.default {
@@ -672,9 +683,13 @@
 					}
 
 					.hover {
+						position: absolute;
 						object-fit: contain;
 						opacity: 0;
 						transition: opacity .2s;
+						z-index: 1;
+						top: 0;
+						left: 0;
 					}
 				}
 
