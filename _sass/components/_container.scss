@@ -458,7 +458,7 @@
 	border-bottom: 1px solid #EBEBEB;
 
 	@media only screen and (max-width: 800px) {
-		padding: 140px 0 70px 0;
+		padding: 100px 0 70px 0;
 	}
 
 	.hero__content {
@@ -565,6 +565,10 @@
 }
 
 // Row Layout
+
+.row-layout.single-page {
+	padding: 0;
+}
 
 .row-layout {
 	width: 100%;

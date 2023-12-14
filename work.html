@@ -6,50 +6,53 @@ summary: Work - Tim Gale, Product Designer
 
 <div class="mb--double">
 	<div class="container--alpha">
+		<div class="single-content">
 
-		<!-- Work -->
-		<div class="row-layout">
-			<div class="row-layout-content">
-				<div class="row-layout__intro">
-					<h2 class="heading--bravo">Work</h2>
-				</div>
-				<div class="row-layout__main">
-					<ul class="row-layout__main__list">
-						{% for work_item in site.work_items limit:3 %}
-							<li>
-								<a href="{{ work_item.permalink }}" class="link-wrap">
-									<div class="work-preview-image">
-										<div class="image-container">
-											<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-											<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-											<span class="link internal">View</span>
+			<!-- Work -->
+			<div class="row-layout single-page">
+				<div class="row-layout-content">
+					<div class="row-layout__intro">
+						<h2 class="heading--bravo">Work</h2>
+					</div>
+					<div class="row-layout__main">
+						<ul class="row-layout__main__list">
+							{% for work_item in site.work_items limit:3 %}
+								<li>
+									<a href="{{ work_item.permalink }}" class="link-wrap">
+										<div class="work-preview-image">
+											<div class="image-container">
+												<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+												<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+												<span class="link internal">View</span>
+											</div>
 										</div>
+										<div class="content">
+											<h3 class="heading--charlie">{{ work_item.title }}</h3>
+											<p class="description">{{ work_item.summary }}</p>
+										</div>
+									</a>
+								</li>
+							{% endfor %}
+							<!-- <li>
+								<a href="https://uiplug.lemonsqueezy.com" class="link-wrap">
+									<div class="work-preview-image">
+										<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+										<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
+										<span class="link external">View</span>
 									</div>
 									<div class="content">
-										<h3 class="heading--charlie">{{ work_item.title }}</h3>
-										<p class="description">{{ work_item.summary }}</p>
+										<h3 class="heading--charlie">Framer Website Templates</h3>
+										<p class="description">High quality Framer templates to help your digital startup</p>
 									</div>
 								</a>
-							</li>
-			      		{% endfor %}
-						<!-- <li>
-							<a href="https://uiplug.lemonsqueezy.com" class="link-wrap">
-								<div class="work-preview-image">
-									<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-									<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-									<span class="link external">View</span>
-								</div>
-								<div class="content">
-									<h3 class="heading--charlie">Framer Website Templates</h3>
-									<p class="description">High quality Framer templates to help your digital startup</p>
-								</div>
-							</a>
-						</li> -->
-					</ul>
+							</li> -->
+						</ul>
+					</div>
 				</div>
 			</div>
+			<!-- /Work -->
+
 		</div>
-		<!-- /Work -->
 
 	</div>
 </div>
