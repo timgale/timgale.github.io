@@ -27,7 +27,7 @@ layout: default
 			<div class="logos">
 				<ul>
 					<li class="client-1">Sky</li>
-					<li class="client-2">Gov.uk</li>
+					<li class="client-2">Sigma 7</li>
 					<li class="client-3">SLC</li>
 					<li class="client-4">Paid</li>
 					<li class="client-5">UKR</li>
@@ -45,7 +45,7 @@ layout: default
 				<div class="col-layout__main">
 					<ul class="col-layout__main__list">
 						<li>
-							<a class="link-wrap" href="https://youtube.com/@thetimgale">
+							<a class="link-wrap" href="https://youtube.com/@thetimgale" target="_blank">
 								<div class="content">
 									<h3 class="heading--charlie">YouTube</h3>
 								<p>Videos about my experience in UX and UI Design</p>
@@ -54,7 +54,7 @@ layout: default
 							</a>
 						</li>
 						<li>
-							<a href="https://instagram.com/uiplug" class="link-wrap">
+							<a class="link-wrap" href="https://instagram.com/uiplug" target="_blank">
 								<div class="content">
 									<h3 class="heading--charlie">Instagram</h3>
 									<p>Regular snippets of product design tips and tricks</p>
@@ -85,7 +85,7 @@ layout: default
 				</div>
 				<div class="row-layout__main">
 					<ul class="row-layout__main__list">
-						{% for work_item in site.work_items limit:3 %}
+						{% for work_item in site.work_items limit:4 %}
 							<li>
 								<a href="{{ work_item.permalink }}" class="link-wrap">
 									<div class="work-preview-image">

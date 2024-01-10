@@ -553,10 +553,10 @@
 			}
 
 			li.client-1 { background-image: url('../images/logo-sky.png') }
-			li.client-2 { background-image: url('../images/logo-govuk.png') }
+			li.client-2 { background-image: url('../images/logo-sigma7.png') }
 			li.client-3 { background-image: url('../images/logo-slc.png') }
-			li.client-4 { background-image: url('../images/logo-paid.png') }
-			li.client-5 { background-image: url('../images/logo-ukretreats.png') }
+			li.client-4 { background-image: url('../images/logo-ukretreats.png') }
+			li.client-5 { background-image: url('../images/logo-paid.png') }
 
 		}
 
@@ -598,7 +598,8 @@
 
 		.row-layout__main__list {
 			display: flex;
-			gap: 40px;
+			flex-wrap: wrap;
+			gap: 100px 40px;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -609,10 +610,15 @@
 	
 			li {
 				position: relative;
-				width: 100%;
+				// width: 100%;
+				width: 400px;
 				display: flex;
 				flex-direction: column;
 				gap: 28px;
+
+				@media (max-width: 960px) {
+					width: 100%;
+				}
 
 				.link-wrap {
 					display: flex;
