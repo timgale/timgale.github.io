@@ -1080,6 +1080,10 @@
 		align-items: center;
 		gap: 12px;
 
+		@media (max-width: 700px) {
+			flex-direction: column;
+		}
+
 		.photos {
 			display: inline-flex;
 			flex-direction: row-reverse;
@@ -1100,6 +1104,8 @@
 			.proof-photo-1 { background-image: url(../images/customer-nate.jpg); }
 			.proof-photo-2 { background-image: url(../images/customer-kate.jpg); }
 			.proof-photo-3 { background-image: url(../images/customer-aniket.jpg); }
+			.proof-photo-4 { background-image: url(../images/customer-kailash.jpg); }
+			.proof-photo-5 { background-image: url(../images/customer-jadene.jpg); }
 
 		}
 
@@ -1114,6 +1120,11 @@
 			font-family: "DM Sans", sans-serif;
 			color: #DBD3DB;
 			text-align: left;
+
+			@media (max-width: 700px) {
+				text-align: center;
+			}
+
 		}
 
 	}
@@ -1306,11 +1317,29 @@
 
 }
 
+.testimonials-single {
+
+	.testimonial {
+		width: 500px;
+	}
+
+	@media (max-width: 700px) {
+		padding-top: 300px;
+	}
+		
+	.col-layout-content {
+		justify-content: center;
+		gap: 32px;
+		padding: 0;
+	}
+
+}
+
 .value {
 	// padding: 0;
 		
 	.col-layout-content {
-		gap: 32px;
+		gap: 60px;
 		padding: 0;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -1339,12 +1368,12 @@
 		}
 
 		@media (min-width: 800px) {
-			width: 47.9%;
+			width: 46.6%;
 			padding: 0;
 		}
 
 		@media (min-width: 1280px) {
-			width: 31.5%;
+			width: 30%;
 			padding: 0;
 		}
 
@@ -1453,7 +1482,8 @@
 
 .testimonial-1 .photo { background-image: url(../images/customer-artur.jpg); }
 .testimonial-2 .photo { background-image: url(../images/customer-jadene.jpg); }
-.testimonial-3 .photo { background-image: url(../images/customer-aniket.jpg); }
+.testimonial-3 .photo { background-image: url(../images/customer-kailash.jpg); }
+.testimonial-4 .photo { background-image: url(../images/customer-aniket.jpg); }
 
 .teacher-container {
 	display: flex;
