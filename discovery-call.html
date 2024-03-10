@@ -1,0 +1,64 @@
+---
+layout: booking
+---
+
+<div class="hero">
+    <div class="hero__content">
+
+        <div>
+
+            <div class="booking-hero-top">
+                <div class="intro-image"></div>
+                <h2 class="heading--alpha">Transform your SaaS Business with a Proven Design Partner</h2>
+                <p>Book your discovery call and lets's talk about I can help you reach your goals.</p>
+                <div>
+                    <p>This coaching is perfect if you want to:</p>
+                    <ul>
+                        <li>Increase confidence in your abilities as a Designer</li>
+                        <li>Learn how to get the biggest returns for your effort</li>
+                        <li>Make your biggest impact with the work you produce</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- testimonials -->
+            <div class="section">
+                <div class="col-layout-content content">
+                    <div class="col-layout-content">
+                        <div class="testimonial testimonial-6">
+                            <div class="rating"></div>
+                                <p>Since implementing Tim's changes, our weekly sign ups have doubled. This enhancement in user experience has significantly reduced friction points, making it inviting and easier for new users to join, boosting our growth.</p>
+                                <p>I highly recommend Tim to anyone seeking a skilled and reliable designer. His dedication and talent truly set him apart in the industry</p>
+                                <div class="person">
+                                    <div class="photo"></div>
+                                    <div class="name">
+                                        <h3 class="heading--charlie">Bill Measom</h3>
+                                        <span>Director, UK Retreats</span>
+                                    </div>
+                                </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <!-- /testimonials -->
+
+        </div>
+
+        <!-- Cal inline embed code begins -->
+        <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+        <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init",  {origin:"https://cal.com"});
+
+        Cal("inline", {
+            elementOrSelector:"#my-cal-inline",
+            calLink: "timgale/30-minute-discovery-call",
+            layout: "month_view"
+        });
+
+        Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+        <!-- Cal inline embed code ends -->
+
+    </div>
+</div>
