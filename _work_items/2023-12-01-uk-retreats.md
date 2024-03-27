@@ -1,8 +1,14 @@
 ---
 layout: project
+class: uk-retreats
 title: UK Retreats
+impact: Doubling weekly sign ups for a leading UK mini-break provider
+logo: /images/case-study-logo-ukretreats.png
+logo-width: 145px
+sample-image: /images/sample-image-ukretreats.png
+services:
 permalink: /work/uk-retreats/
-date: 2023-12-02
+date: 2024-03-29
 categories: work_items
 tags: work_items
 image: /images/ukretreats-case-study-preview.png

@@ -22,11 +22,20 @@
         <!-- nav -->
         <div class="masthead__nav">
           <ul class="list--nav">
-            {% for item in site.data.menu %}
+
             <li class="list--nav__item">
-              <a class="{% if page.url == item.link or page.url contains item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a>        
+              <a href="/#work">Work</a>
             </li>
-            {% endfor %}
+            <li class="list--nav__item">
+              <a href="/#articles">Articles</a>
+            </li>
+            <li class="list--nav__item">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li class="list--nav__item">
+              <a href="#lets-talk">Let's Talk</a>
+            </li>
+
           </ul>
         </div>
         <!-- /nav -->

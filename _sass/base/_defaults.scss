@@ -2,6 +2,10 @@
   Defaults
 \*----------------------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Typography
 @font-face {
 font-family: "hk-grotesk-regular";
@@ -19,10 +23,10 @@ src: url("/fonts/hkgrotesk-semibold.eot"),
 	 url("/fonts/hkgrotesk-semibold.otf") format("opentype");
 }
 
-$font-family-alpha: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-family-alpha: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 // $font-family-alpha: "hk-grotesk-regular", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
 // $font-family-bravo: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-$font-family-bravo: inter, sans-serif;
+$font-family-bravo: "DM Sans", inter, sans-serif;
 // $font-family-bravo: "hk-grotesk-semi-bold", "franklin-gothic-urw", "Helvetica Nueue", Helvetica, sans-serif;
 $font-family-charlie: "freight-text-pro", Georgia, serif;
 $font-size-base:   17px;

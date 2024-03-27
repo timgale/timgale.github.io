@@ -204,6 +204,11 @@
 
 }
 
+.articles {
+	padding: 140px 0;
+	border-top: 1px solid #EBEBEB;
+}
+
 .latest-blog-post {
 	padding: 64px 0;
 	border-top: 1px solid rgba(238, 242, 247, 100%);
@@ -311,6 +316,11 @@
 	z-index: 9999;
 	box-sizing: border-box;
 	justify-content: space-between;
+
+	@media only screen and (max-width: 700px) {
+		padding: 20px 0;
+	}
+
 }
 
 .masthead-content {
@@ -320,8 +330,8 @@
 	margin: 0 auto;
 	align-items: baseline;
 
-	@media only screen and (max-width: 680px) {
-		padding: 0 6vw;
+	@media only screen and (max-width: 700px) {
+		padding: 4vw 6vw;
 
 	}
 
@@ -408,14 +418,62 @@
 		color: #6F7785;
 	}
 
+	.client {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.client-meta {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		.name {
+			color: #4A5568;
+			font-family: "DM Sans";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px; /* 125% */
+		}
+
+		.title {
+			color: #4A5568;
+			font-family: "DM Sans";
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px; /* 125% */
+		}
+
+	}
+
+	.photo {
+		width: 40px;				
+		height: 40px;
+		background-size: 40px;
+		border-radius: 100%;
+		border: 1px solid #EBEBEB;
+	}
+
+	.photo.quote-1 { background-image: url(../images/customer-bill.jpg); }
+	.photo.quote-2 { background-image: url(../images/customer-rob.jpg); }
+	.photo.quote-3 { background-image: url(../images/customer-tom.jpg); }
+	.photo.quote-4 { background-image: url(../images/customer-chris.jpg); }
+	.photo.quote-5 { background-image: url(../images/customer-lewis.jpg); }
+
 }
 
 .client-quotes {
+	padding: 140px 0;
+	border-top: 1px solid #EBEBEB;
 
 	.client-quotes__content {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 160px;
+		gap: 120px;
 
 		@media (max-width: 960px) {
 			flex-direction: column;
@@ -448,6 +506,22 @@
 		color: #6F7785;
 	}
 
+}
+
+.quote--charlie {
+	@extend .quote--alpha;
+	width: 520px;
+	padding-left: 0;
+	border: none;
+
+	@media only screen and (max-width: 700px) {
+		width: 100%;
+	}
+
+}
+
+.quote-mark {
+	font-family: "DM Serif Display";
 }
 
 // Hero
@@ -531,7 +605,7 @@
 		ul { 
 			display: flex;
 			margin: 0 auto;
-			gap: 76px;
+			gap: 44px;
 			justify-content: center;
 			padding: 0;
 
@@ -557,13 +631,16 @@
 			li.client-3 { background-image: url('../images/logo-slc.png') }
 			li.client-4 { background-image: url('../images/logo-ukretreats.png') }
 			li.client-5 { background-image: url('../images/logo-paid.png') }
-			li.client-6 { background-image: url('../images/logo-nhs.png') }
+			li.client-6 { background-image: url('../images/logo-adplist.png') }
+			li.client-7 { background-image: url('../images/logo-nhs.png') }
 
 		}
 
 	}
 
 }
+
+.hero--book-call { border-bottom: none; }
 
 // Row Layout
 
@@ -1809,4 +1886,161 @@
 	  animation-delay: .15s;
 	  animation-fill-mode: both;
 	}
+}
+
+/* Case Study Previews */
+
+.case-study {
+	display: flex;
+	align-items: flex-start;
+	gap: 36px;
+	align-self: stretch;
+	border-radius: 8px;
+	padding: 40px;
+
+	@media only screen and (max-width: 700px) {
+		flex-direction: column;
+		gap: 56px;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 36px;
+		align-self: stretch;
+
+		.heading {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 28px;
+			align-self: stretch;
+
+			h3 {
+				color: #1A202C;
+				font-family: "DM Sans";
+				font-size: 28px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 38px; /* 135.714% */
+				letter-spacing: -0.48px;
+				text-transform: capitalize;
+				margin: 0;
+			}
+		}
+
+		.services {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 16px;
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				li {
+					color: #333A48;
+					font-family: "DM Sans";
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 28px; /* 140% */
+					letter-spacing: -0.2px;
+					position: relative;
+					padding: 0 0 16px 36px;
+				
+				&:before {
+					content: "";
+					position: absolute;
+					display: inline-block;
+					left: 0;
+					background-image: url('../images/icons/icon-arrow-right-square.svg');
+					width: 24px;
+					height: 24px;
+				}
+
+				}
+
+			}
+		}
+
+	}
+
+	.image {
+
+		.sample-image {
+
+			@media only screen and (max-width: 700px) {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+}
+
+.case-study.sky { background: #F2F2F2; }
+.case-study.paid { background: #F3F3F7; }
+.case-study.uk-retreats { background-image: url(../images/sample-image-ukretreats-base.svg); background-color: #FDFBF7; }
+.case-study.carbon { background: #FFFFFF; border: 1px solid #F5F5F5; }
+
+.lower-cta__main {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	@media only screen and (max-width: 700px) {
+		width: 100%;
+	}
+
+	.copy {
+
+	}
+
+	h2 {
+		color: #1A202C;
+		font-family: "DM Sans";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 52px; /* 140% */
+		letter-spacing: -0.25px;
+		text-transform: capitalize;
+	}
+}
+
+/* Buttons */
+
+a.button-secondary {
+	display: inline-block;
+	color: #595F6A;
+	font-family: "DM Sans";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px; /* 111.111% */
+	letter-spacing: -0.18px;
+	padding: 16px 52px 16px 20px;
+	align-items: center;
+	border-radius: 6px;
+	border: 1px solid #808195;
+	background: url(../images/icons/icon-arrow-right-small.svg) no-repeat 90% 50%;
+}
+
+a.button-primary {
+	@extend .button-secondary;
+	color: #F4F4F5;
+	border: none;
+	padding: 16px 48px 16px 20px;
+	background: #080A1B url(../images/icons/icon-arrow-right-small-light.svg) no-repeat 88% 50%;
+
+	:hover {
+		color: #F4F4F5;
+	}
+
 }

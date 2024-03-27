@@ -10,15 +10,21 @@ layout: default
 			<div class="hero__content">
 				<div class="hero__content__intro">
 					<div class="bio">
-						<h2 class="heading--alpha">Digital product designer, coach, and content creator.</h2>
-							<p>I <a href="/work/">help companies</a> with their user experience needs, <a href="https://adplist.org/mentors/tim-gale" target="_blank">coach aspiring creatives</a>, and <a href="https://youtube.com/@thetimgale" target="_blank">make content</a> to help you level up in your design career.</p>
+						<h2 class="heading--alpha">Experienced Design Partner for Scaling Your SaaS Product</h2>
+							<p>I help companies deliver high quality, user focused products using proven design solutions, helping to scale startup businesses.</p>
 					</div>
 						<hr>
 					<div class="social-proof">
-						<h3 class="heading--charlie">Trusted by many companies and individuals</h3>
+						<h3 class="heading--charlie">Trusted by Founders</h3>
 							<div class="quote--alpha">
-								<p>“As someone new to UI and UX design, Tim clarified my confusion, explaining the concepts in a detailed and simple manner. His guidance has significantly enhanced my understanding of design principles!”</p>
-								<span>– Muhammad Zubair, Coaching client</span>
+								<p><span class="quote-mark">“</span>Since partnering with Tim, our weekly sign ups have doubled. This enhancement in user experience has significantly reduced friction points, making it inviting and easier for new users to join, boosting our growth.<span class="quote-mark">”</span></p>
+								<div class="client">
+									<div class="photo quote-1"></div>
+									<div class="client-meta">
+										<span class="name">Bill Measom</span>
+										<span class="title">Director of ukretreats.co.uk</span>
+									</div>
+								</div>
 							</div>
 					</div>
 				</div>
@@ -31,102 +37,54 @@ layout: default
 					<li class="client-3">SLC</li>
 					<li class="client-4">Paid</li>
 					<li class="client-5">UKR</li>
-					<li class="client-6">NHS</li>
+					<li class="client-6">APDList</li>
+					<li class="client-7">NHS</li>
 				</ul>
 			</div>	
 		</div>
 		<!-- /About -->
 
-		<!-- Content Creation -->
-		<div class="col-layout">
-			<div class="col-layout-content">
-				<div class="col-layout__intro">
-					<h2 class="heading--bravo">Content Creation</h2>
-				</div>
-				<div class="col-layout__main">
-					<ul class="col-layout__main__list">
-						<li>
-							<a class="link-wrap" href="https://youtube.com/@thetimgale" target="_blank">
-								<div class="content">
-									<h3 class="heading--charlie">YouTube</h3>
-								<p>Videos about my experience in UX and UI Design</p>
-								</div>
-								<span class="link external">View</span>
-							</a>
-						</li>
-						<li>
-							<a class="link-wrap" href="https://instagram.com/uiplug" target="_blank">
-								<div class="content">
-									<h3 class="heading--charlie">Instagram</h3>
-									<p>Regular snippets of product design tips and tricks</p>
-								</div>
-								<span class="link external">View</span>
-							</a>
-						</li>
-						<!-- <li>
-							<a href="/" class="link-wrap">
-								<div class="content">
-									<h3 class="heading--charlie">Newsletter</h3>
-									<p>Design deep dives from my 10+ years in the industry</p>
-								</div>
-								<span class="link internal">View</span>
-							</a>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- /Content Creation -->
-
 		<!-- Work -->
-		<div class="row-layout">
+		<div id="work" class="row-layout">
 			<div class="row-layout-content">
 				<div class="row-layout__intro">
-					<h2 class="heading--bravo">Work</h2>
+					<h2 class="heading--bravo">Client Success Stories</h2>
 				</div>
-				<div class="row-layout__main">
-					<ul class="row-layout__main__list">
-						{% for work_item in site.work_items limit:4 %}
-							<li>
-								<a href="{{ work_item.permalink }}" class="link-wrap">
-									<div class="work-preview-image">
-										<div class="image-container">
-											<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-											<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-											<span class="link internal">View</span>
-										</div>
-									</div>
-									<div class="content">
-										<h3 class="heading--charlie">{{ work_item.title }}</h3>
-										<p class="description">{{ work_item.summary }}</p>
-									</div>
-								</a>
-							</li>
-			      		{% endfor %}
-						<!-- <li>
-							<a href="https://uiplug.lemonsqueezy.com" class="link-wrap">
-								<div class="work-preview-image">
-									<img class="default" src="{{ work_item.image }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-									<img class="hover" src="{{ work_item.image-animated }}" alt="{{ work_item.title }}" title="{{ work_item.title }}">
-									<span class="link external">View</span>
-								</div>
-								<div class="content">
-									<h3 class="heading--charlie">Framer Website Templates</h3>
-									<p class="description">High quality Framer templates to help your digital startup</p>
-								</div>
-							</a>
-						</li> -->
-					</ul>
+
+				{% for work_item in site.work_items limit:4 %}
+				<div class="case-study {{ work_item.class }}">
+					<div class="main">
+						<div class="heading">
+							<span class="client-logo">
+								<img src="{{ work_item.logo }}" alt="" width="{{ work_item.logo-width }}">
+							</span>
+							<h3>{{ work_item.impact }}</h3>
+						</div>
+						<div class="services">
+							<ul>
+								<li>UX Strategy</li>
+								<li>UX Research</li>
+								<li>UX Design</li>
+								<li>UI Design</li>
+							</ul>
+						</div>
+						<a class="button-secondary" href="{{ work_item.permalink }}">View Case Study</a>
+					</div>
+					<div class="image">
+						<img class="sample-image" src="{{ work_item.sample-image }}" alt="" width="578px">
+					</div>
 				</div>
+				{% endfor %}
+
 			</div>
 		</div>
 		<!-- /Work -->
 
-		<!-- Blog Posts -->
-		<div class="col-layout">
+		<!-- Articles -->
+		<div id="articles" class="col-layout articles">
 			<div class="col-layout-content">
 				<div class="col-layout__intro">
-					<h2 class="heading--bravo">Blog</h2>
+					<h2 class="heading--bravo">Articles</h2>
 				</div>
 				<div class="col-layout__main">
 					<ul class="col-layout__main__list">
@@ -147,160 +105,77 @@ layout: default
 				</div>
 			</div>
 		</div>
-		<!-- /Blog Posts -->
+		<!-- /Articles -->
 
-		<!-- Lower Third -->
-		<div class="lower-third">
-			<div class="lower-third__content">
-				<!-- Social Proof -->
-				<div class="client-quotes">
-					<div class="client-quotes__content">
-						<div class="quote--bravo">
-							<span class="quote-logo client-1">Papertrail</span>
-							<p>“The quality of Tim's work and his communication with us has always been great, and we have never hesitated to get him involved in a project.”</p>
-							<span>– Rob Walker, Co-founder at Papertrail.io</span>
+		<!-- Satisfied Clients -->
+		<div id="testimonials" class="row-layout client-quotes">
+			<div class="row-layout-content">
+				<div class="row-layout__intro">
+					<h2 class="heading--bravo">Satisfied Clients</h2>
+				</div>
+
+				<div class="client-quotes__content">
+					<div class="quote--charlie">
+						<p><span class="quote-mark">“</span>The quality of Tim's work and his communication with us has always been great, and we have never hesitated to get him involved in a project.<span class="quote-mark">”</span></p>
+						<div class="client">
+							<div class="photo quote-2"></div>
+							<div class="client-meta">
+								<span class="name">Rob Walker</span>
+								<span class="title">CTO of papertrail.io</span>
+							</div>
 						</div>
-						<div class="quote--bravo">
-							<span class="quote-logo client-2">Paid</span>
-							<p>“Tim ran UX for Paid, and is great at working with clients, running workshops and communicating his ideas to the team. His UX is always on point.</p>
-							<span>– Tom Howsam, Founder at Paid</span>
+					</div>
+					<div class="quote--charlie">
+						<p><span class="quote-mark">“</span>Tim ran UX for Paid, and is great at working with clients, running workshops and communicating his ideas to the team. His UX is always on point.<span class="quote-mark">”</span></p>
+						<div class="client">
+							<div class="photo quote-3"></div>
+							<div class="client-meta">
+								<span class="name">Tow Howsam</span>
+								<span class="title">Founder of paid.co.uk</span>
+							</div>
+						</div>
+					</div>
+					<div class="quote--charlie">
+						<p><span class="quote-mark">“</span>Tim has a remarkable level of thoughtfulness and empathy in his approach to design. He showcases a strong growth mindset that will benefit any client that is focused on crafting exceptional customer experiences.<span class="quote-mark">”</span></p>
+						<div class="client">
+							<div class="photo quote-4"></div>
+							<div class="client-meta">
+								<span class="name">Chris Compston</span>
+								<span class="title">Product Ops Leader</span>
+							</div>
+						</div>
+					</div>
+					<div class="quote--charlie">
+						<p><span class="quote-mark">“</span>Tim has a remarkable level of thoughtfulness and empathy in his approach to design. He showcases a strong growth mindset that will benefit any client that is focused on crafting exceptional customer experiences.<span class="quote-mark">”</span></p>
+						<div class="client">
+							<div class="photo quote-5"></div>
+							<div class="client-meta">
+								<span class="name">Lewis Morris</span>
+								<span class="title">Founder of middlesbroughfe.co.uk</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /Social Proof -->
-				<!-- Free Download -->
-				<!-- <div class="download-cta">
-					<h3 class="heading--charlie">Learn how to land your dream design job</h3>
-						<p>Take control of your future and set yourself up for landing that product design job you've been looking for.</p>
-						<div class="newsletter-form-container"><form class="newsletter-form" action="https://app.loops.so/api/newsletter-form/clmenjr390103l70orvdx5x85" method="POST" style="display: flex; flex-direction: row; align-items: center; width: 100%;"><input class="newsletter-form-input" name="newsletter-form-input" type="email" placeholder="Enter your email" required="" style="font-family: Inter, sans-serif; color: rgb(74, 85, 104); font-size: 1rem; margin: 0px 10px 0px 0px; width: 100%; max-width: 300px; min-width: 100px; background: rgb(255, 255, 255); border: 1px solid rgb(209, 213, 219); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; padding: 12px 20px;"><button type="submit" class="newsletter-form-button" style="background: rgb(13, 148, 136); font-size: 1rem; color: rgb(255, 255, 255); font-family: Inter, sans-serif; display: flex; width: min-content; max-width: 300px; white-space: nowrap; align-items: center; justify-content: center; flex-direction: row; padding: 12px 20px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; text-align: center; font-style: normal; font-weight: 500; line-height: 20px; border: none; cursor: pointer;">Get Your Free Guide</button><button type="button" class="newsletter-loading-button" style="background: rgb(13, 148, 136); font-size: 14px; color: rgb(255, 255, 255); font-family: Inter, sans-serif; display: none; width: min-content; max-width: 300px; white-space: nowrap; height: 38px; align-items: center; justify-content: center; flex-direction: row; padding: 9px 17px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px; border-radius: 6px; text-align: center; font-style: normal; font-weight: 500; line-height: 20px; border: none; cursor: pointer;">Please wait...</button></form><div class="newsletter-success" style="display: none; align-items: center; justify-content: center; width: 100%;"><p class="newsletter-success-message" style="font-family: Inter, sans-serif; color: rgb(0, 0, 0); font-size: 14px;">Thanks! We'll be in touch!</p></div><div class="newsletter-error" style="display: none; align-items: center; justify-content: center; width: 100%;"><p class="newsletter-error-message" style="font-family: Inter, sans-serif; color: rgb(185, 28, 28); font-size: 14px;">Oops! Something went wrong, please try again</p></div>
-						<button 
-						class='newsletter-back-button'
-						type='button' 
-						style='color:#6b7280;font: 14px, Inter, sans-serif;margin:10px auto;text-align:center;display:none;background:transparent;border:none;cursor:pointer'
-						onmouseout='this.style.textDecoration="none"' 
-						onmouseover='this.style.textDecoration="underline"'>
-						&larr; Back
-						</button>
-						</div><script>
-						function submitHandler(event) {
-						event.preventDefault();
-						var container = event.target.parentNode;
-						var form = container.querySelector(".newsletter-form");
-						var formInput = container.querySelector(".newsletter-form-input");
-						var success = container.querySelector(".newsletter-success");
-						var errorContainer = container.querySelector(".newsletter-error");
-						var errorMessage = container.querySelector(".newsletter-error-message");
-						var backButton = container.querySelector(".newsletter-back-button");
-						var submitButton = container.querySelector(".newsletter-form-button");
-						var loadingButton = container.querySelector(".newsletter-loading-button");
 
-						const rateLimit = () => {
-							errorContainer.style.display = "flex";
-							errorMessage.innerText = "Too many signups, please try again in a little while";
-							submitButton.style.display = "none";
-							formInput.style.display = "none";
-							backButton.style.display = "block";
-						}
-
-						// Compare current time with time of previous sign up
-						var time = new Date();
-						var timestamp = time.valueOf();
-						var previousTimestamp = localStorage.getItem("loops-form-timestamp");
-
-						// If last sign up was less than a minute ago
-						// display error
-						if (previousTimestamp && Number(previousTimestamp) + 60000 > timestamp) {
-							rateLimit();
-							return;
-						}
-						localStorage.setItem("loops-form-timestamp", timestamp);
-
-						submitButton.style.display = "none";
-						loadingButton.style.display = "flex";
-
-						var formBody = "userGroup=&email=" + encodeURIComponent(formInput.value);
-						fetch(event.target.action, {
-							method: "POST",
-							body: formBody,
-							headers: {
-							"Content-Type": "application/x-www-form-urlencoded",
-							},
-						})
-							.then((res) => [res.ok, res.json(), res])
-							.then(([ok, dataPromise, res]) => {
-							if (ok) {
-								// If response successful
-								// display success
-								success.style.display = "flex";
-								form.reset();
-							} else {
-								// If response unsuccessful
-								// display error message or response status
-								dataPromise.then(data => {
-								errorContainer.style.display = "flex";
-								errorMessage.innerText = data.message
-									? data.message
-									: res.statusText;
-								});
-							}
-							})
-							.catch(error => {
-							// check for cloudflare error
-							if (error.message === "Failed to fetch") {
-								rateLimit();
-								return;
-							}
-							// If error caught
-							// display error message if available
-							errorContainer.style.display = "flex";
-							if (error.message) errorMessage.innerText = error.message;
-							localStorage.setItem("loops-form-timestamp", '');
-							})
-							.finally(() => {
-							formInput.style.display = "none";
-							loadingButton.style.display = "none";
-							backButton.style.display = "block";
-							});
-						}
-						function resetFormHandler(event) {
-						var container = event.target.parentNode;
-						var formInput = container.querySelector(".newsletter-form-input");
-						var success = container.querySelector(".newsletter-success");
-						var errorContainer = container.querySelector(".newsletter-error");
-						var errorMessage = container.querySelector(".newsletter-error-message");
-						var backButton = container.querySelector(".newsletter-back-button");
-						var submitButton = container.querySelector(".newsletter-form-button");
-
-						success.style.display = "none";
-						errorContainer.style.display = "none";
-						errorMessage.innerText = "Oops! Something went wrong, please try again";
-						backButton.style.display = "none";
-						formInput.style.display = "flex";
-						submitButton.style.display = "flex";
-						}
-
-						var formContainers = document.getElementsByClassName(
-						"newsletter-form-container"
-						);
-
-						for (var i = 0; i < formContainers.length; i++) {
-						var formContainer = formContainers[i]
-						var handlersAdded = formContainer.classList.contains('newsletter-handlers-added')
-						if (handlersAdded) continue;
-						formContainer
-							.querySelector(".newsletter-form")
-							.addEventListener("submit", submitHandler);
-						formContainer
-							.querySelector(".newsletter-back-button")
-							.addEventListener("click", resetFormHandler);
-						formContainer.classList.add("newsletter-handlers-added");
-						}
-						</script>
-				</div> -->
-				<!-- /Free Download -->
 			</div>
 		</div>
-		<!-- /Lower Third -->
+		<!-- /Satisfied Clients -->
+
+		<!-- CTA -->
+		<div id="lets-talk" class="lower-third lower-cta">
+			<div class="lower-third__content">
+				<div class="lower-cta__main">
+					<div class="copy">
+						<h2>Transform your SaaS business with a proven design partner</h2>
+							<p>Book your free discovery call today and lets's talk about how I can help you reach your product goals.</p>
+						</div>
+						<div>
+							<a class="button-primary" href="/discovery-call">Let's Talk</a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- /CTA -->
 		
 	</div>
 </div>
