@@ -5,6 +5,7 @@ summary: The cucial skills to work on as a designer
 date: 2023-12-01
 tags: posts
 categories: posts
+image: /images/article-images/product-designer-core-skills-post-image.jpg
 ---
 
 If you’re looking to become a product designer, but you’re overwhelmed by all the skills you think you need to know to get started, then this is the video for you.

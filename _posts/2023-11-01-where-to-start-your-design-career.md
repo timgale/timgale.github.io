@@ -5,6 +5,7 @@ summary: Start-up, agency, in-house. Which is best for you?
 date: 2023-11-01
 tags: posts
 categories: posts
+image: /images/article-images/where-to-start-your-design-career-post-image.jpg
 ---
 
 Agency, in-house, start-up... Not sure which is right for you? Let's break down each type of working environment and help guide you to the right decision.

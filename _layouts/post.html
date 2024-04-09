@@ -8,66 +8,36 @@ layout: default
 
       <div class="single-content">
 
-        <!-- Breadcrumb -->
-        <!-- <div class="breadcrumb">
-          <a class="previous" href="/blog">Blog</a>
-          <span class="divider">/</span>
-          <span class="current">{{ page.title }}</span></span>
-        </div> -->
-        <!-- /Breadcrumb -->
+        <article class="post article" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-          <header class="mb--double">
-            <h2 class="heading--alpha narrow" itemprop="name headline">{{ page.title }}</h2>
-            <!-- <span class="sub-text">
-              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-            </span> -->
+          <header class="article__header narrow">
+            <h2 class="heading--alpha" itemprop="name headline">{{ page.title }}</h2>
+            <span class="sub-text">
+              <p>{{ page.summary }}</p>
+            </span>
+            <div class="author">
+              <div class="author__photo"></div>
+              <div class="author__meta">
+                <span class="author__meta__name">By Tim Gale</span>
+              </div>
+            </div>
           </header>
 
           <div class="post-content" itemprop="articleBody">
             {{ content }}
           </div>
 
+          <div class="author-bio narrow">
+            <div class="author-bio__photo"></div>
+            <div class="author-bio__intro">
+              <h3>About Tim Gale</h3>
+            </div>
+            <div class="author-bio__details">
+              <p>Tim has over 12 years experience delivering high quality products with SaaS businesses. Tim has improved the user experience of products for companies including Sky, UK Retreats, Student Loans Company and Magnite.</p>
+            </div>
+          </div>
+
         </article>
-
-        <!-- pagination -->
-        <!-- <div class="pagination mb--double">
-          <div class="pagination__item--prev fl">
-            
-              {% if page.previous != nil %}
-                {% if page.title == 'Designing for Internal Users' %}
-                  <a href="/2016/06/01/listening">
-                    <span class="text mb--quarter">&#8592; Previous Post</span>
-                    <span class="sub-text">Listening</span>
-                  </a>
-                {% else %}
-                <a href="{{ page.previous.url }}">
-                  <span class="text mb--quarter">&#8592; Previous Post</span>
-                  <span class="sub-text">{{ page.previous.title }}</span>
-                </a>
-                {% endif %}
-            {% endif %}
-          </div>
-          <div class="pagination__item--next fr">
-
-            {% if page.next != nil %}
-              {% if page.title == 'Listening' %}
-                <a href="/2017/12/19/designing-for-internal-users">
-                  <span class="text mb--quarter">Next Post &#8594;</span>
-                  <span class="sub-text">Designing for Internal Users</span>
-                </a>
-              {% else %}
-                <a href="{{ page.next.url }}">
-                  <span class="text mb--quarter">Next Post &#8594;</span>
-                  <span class="sub-text">{{ page.next.title }}</span>
-                </a>
-              {% endif %}
-            {% endif %}
-            
-          </div>
-        </div> -->
-        <!-- /pagination -->
 
       </div>
 
@@ -138,7 +108,7 @@ layout: default
           <p>Book your free discovery call today and let's talk about how I can help you reach your product goals.</p>
         </div>
         <div>
-          <a class="button-primary" href="/discovery-call">Let's Talk</a>
+          <a class="button-primary" href="/discovery-call">Book Your Discovery Call</a>
         </div>
     </div>
   </div>

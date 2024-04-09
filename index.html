@@ -13,6 +13,11 @@ layout: default
 						<h2 class="heading--alpha">Experienced Design Partner for Scaling Your SaaS Product</h2>
 							<p>I help companies deliver high quality, user focused products using proven design solutions, helping to scale startup businesses.</p>
 					</div>
+					<!-- CTA -->
+					<div class="hero__cta">
+						<a class="button-primary" href="/discovery-call">Book Your Discovery Call</a>
+					</div>
+					<!-- /CTA -->
 						<hr>
 					<div class="social-proof">
 						<h3 class="heading--charlie">Trusted by Founders</h3>
@@ -27,6 +32,7 @@ layout: default
 								</div>
 							</div>
 					</div>
+
 				</div>
 				<img class="hero-image" src="images/hero-image.png" alt="Tim speaking at an event">
 			</div>
@@ -81,9 +87,9 @@ layout: default
 		<!-- /Work -->
 
 		<!-- Articles -->
-		<div id="articles" class="col-layout articles">
-			<div class="col-layout-content">
-				<div class="col-layout__intro">
+		<div id="articles" class="row-layout articles">
+			<div class="row-layout-content">
+				<div class="row-layout__intro">
 					<h2 class="heading--bravo">Articles</h2>
 				</div>
 				<div class="col-layout__main">
@@ -92,9 +98,12 @@ layout: default
 			      			{% if post.tags contains 'posts' %}
 								<li>
 									<a href="{{ post.url }}" class="link-wrap">
-										<div class="content">
-											<h3 class="heading--charlie">{{ post.title }}</h3>
-											<p>{{ post.summary }}</p>
+										<div class="article-preview__content content">
+											<img class="article-preview-image" src="{{ post.image }}" alt="{{ post.title }}">
+											<div class="content-text">
+												<h3 class="heading--charlie">{{ post.title }}</h3>
+												<p>{{ post.summary }}</p>
+											</div>
 										</div>
 										<span class="link internal">View</span>
 									</a>
@@ -170,7 +179,7 @@ layout: default
 							<p>Book your free discovery call today and let's talk about how I can help you reach your product goals.</p>
 						</div>
 						<div>
-							<a class="button-primary" href="/discovery-call">Let's Talk</a>
+							<a class="button-primary" href="/discovery-call">Book Your Discovery Call</a>
 						</div>
 				</div>
 			</div>
