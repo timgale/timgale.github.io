@@ -10,7 +10,7 @@ image: ../images/article-images/design-collaboration-post-image.jpg
 
 <img class="article-image" src="/images/article-images/design-collaboration-post-image.jpg" />
 
-Good design is a key factor in businesses results.
+Good design is a key factor in business results.
 {: class="narrow"}
 
 Those who are aware of the impact design can bring are more likely to improve customer satisfaction and provide a greater experience for the people using their product.
