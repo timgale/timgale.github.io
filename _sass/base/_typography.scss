@@ -90,7 +90,7 @@ h3 {
   font-size: 1.6rem;
   font-weight: 700;
   color: #1B202B;
-  margin: 64px 0 1em 0;
+  margin: 80px 0 1em 0;
 
   a {
     color: inherit;
@@ -118,10 +118,11 @@ p {
   font-family: $font-family-bravo;
   // @extend .mb;
   font-size: 1.3rem;
-  line-height: 160%;
+  line-height: 168%;
   font-weight: 400;
   letter-spacing: -0.2px;
   color: #4A5568;
+  margin-bottom: 1.25em;
 
   @media (max-width: 700px) {
     font-size: 1.2rem;
