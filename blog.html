@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Blog
-summary: Blog posts - Tim Gale, Product Designer
+summary: Blog posts - Tim Gale, Freelance UX Designer
+permalink: /blog/
 ---
 
 <div class="mb--double">
@@ -17,7 +18,7 @@ summary: Blog posts - Tim Gale, Product Designer
 					</div>
 					<div class="col-layout__main">
 						<ul class="col-layout__main__list">
-							{% for post in site.posts limit:3 %}
+							{% for post in site.posts %}
 								{% if post.tags contains 'posts' %}
 									<li>
 										<a href="{{ post.url }}" class="link-wrap">

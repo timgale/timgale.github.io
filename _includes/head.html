@@ -2,37 +2,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
-
-  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' | escape }}{% else %}{{ site.keywords | join: ', ' | escape }}{% endif %}" />
-
-  <meta name="author" content="Tim Gale" />
-
-  <meta property="og:image" content="{{ site.image }}" />
-  <meta property="og:image:secure_url" content="{{ site.image }}" />
-
-  <!-- twitter summary card -->
-  <meta name="twitter:site"    content="@timgale">
-  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
-  <meta name="twitter:title"   content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-
-  {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}">
-  {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-
-  {% if page.image %}
-  <meta name="twitter:card"  content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-  {% else %}
-  <meta name="twitter:card"  content="summary">
-  <meta name="twitter:image" content="{{ page.image_small }}">
-  {% endif %}
-  <!-- /twitter summary card -->
-
+  
+  {% seo %}
+  
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
@@ -53,3 +25,12 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SE8VPL6QY0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SE8VPL6QY0');
+</script>
